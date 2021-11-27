@@ -1,41 +1,90 @@
 ---
-emoji: 🔮
-title: Gatsby 테마로 GitHub Blog 만들기
-date: '2021-07-06 00:00:00'
-author: 줌코딩
-tags: 블로그 github-pages gatsby
-categories: 블로그
+emoji: 👩‍💻
+title: 배열과 문자열
+date: '2021-11-25 17:00:00'
+author: 코린이
+tags: C c언어 문법 c언어기초
+categories: c언어
 ---
 
-제 블로그의 테마나 Gatsby의 다른 테마를 활용해서 Github Blog를 만들고 싶은 분들이 계실텐데요! 이런 분들에게 도움을 드리고자 이 글을 쓰게 되었습니다. 잘 안되는 부분이나 궁금한 점을 댓글로 남겨주면 확인해보고 답변 드리도록 하겠습니다!
+이번 2학기에 새로 배우는 내용인 배열부터 포스팅을 하도록 하겠습니다 :)
+<br/>
+> 이전 학기에 배웠던 내용은 [이곳](https://blog.naver.com/friendlilo)에서 볼 수 있습니다. 차근차근 옮길 예정..
 
-## 1. Repository 생성하기
+## 1. 배열의 기본
 
-GitHub Blog를 만들려면 Github에 Repository를 생성해야 합니다.
+같은 데이터 형의 변수를 메모리에 연속적으로 할당하고, 같은 이름으로 사용하는 방법.
+배열의 각 원소는 메모리에 연속적으로 할당된다.
 
-![github-blog.png](github-blog.png)
+### 배열의 선언
+- 배열을 선언할 때는 우선, 배열의 `데이터 형`, `배열의 이름`이 필요하고, []안에 `배열의 크기`를 써주어야 한다.
 
-GitHub에 로그인 한 뒤에 우측 상단에 있는 New Repository 버튼을 클릭하면 repository 생성 페이지로 이동하게 됩니다. 이 때 Import a repository 버튼을 클릭합니다.
 
-![github-blog-1.png](github-blog-1.png)
+```bash
+int arr[5];    // 크기가 5인 int 배열의 선언
+```
+<br/>
 
-아래 페이지에 도달하시면 두 가지 정보를 넣어주셔야 하는데, Your old repository's clone URL에는 사용하고자 하는 gatsby 테마가 있는 repository의 주소를 넣어주시면 됩니다.
+- 배열의 크기는 반드시 0보다 큰 `정수형 상수`로만 지정할 수 있다.
 
-제 블로그 테마를 쓰고 싶으신 분들은 여기에 [https://github.com/zoomKoding/zoomkoding.com](https://github.com/zoomKoding/zoomkoding.com)를 넣어주세요!
+```bash
+int arr1[];           // 배열의 크기가 없으므로 컴파일 에러
+int arr2[0];          // 배열의 크기가 0이므로 컴파일 에러
 
-![github-blog-2.png](github-blog-2.png)
+int size = 5;
+int arr3[size];       // 배열의 크기가 변수이므로 컴파일 에러
+int arr4[size + 10];  // 배열의 크기가 변수를 포함한 수식이므로 컴파일 에러
+```
 
-그럼 이제 Repository Name을 입력해줍니다. 이 때 주의할 점은 Repository명은 꼭 [GitHubID].github.io로 설정하셔야 합니다.
+<br/>
 
-그리고 Begin Import 버튼을 클릭하고 조금 기다리면 선택하신 블로그 테마를 import한 Repository가 생성되게 됩니다.
+- 배열의 크기는 `매크로 상수`로 지정할 수 있다.
 
-![github-blog-3.png](github-blog-3.png)
+```bash
+#define MAX 100
+int arr5[MAX];      // 매크로 상수로 배열의 크기를 지정할 수 있다.
+```
+<br/>
 
-## 2. Repository 가져오기
+- 배열의 크기를 구할 때 `sizeof` 연산자를 이용할 수 있다.
+
+```bash
+int arr[5];
+int size;
+size = sizeof(arr) / sizeof(int);
+```
+
+<br/>
+
+
+### 배열의 사용
+- 배열을 사용할 때는 첨자 또는 `인덱스`를 이용한다.
+
+-- 같은 이름의 배열 중 몇 번째 원소인지를 []안에 써준다. <br/>
+-- 배열의 인덱스는 항상 0부터 시작하고 하나씩 증가된다.
+
+- 배열을 사용할 때는 for문을 활용한다. (예제 7-1)
+
+```bash
+for(i = 0; i < 5; i++){
+  printf("arr[%d] = %d\n", i, arr[i]);
+}
+```
+<br/>
+
+- 배열의 인덱스가 유효 범위를 넘어서지 않아야한다.
+- 배열도 따로 초기화를 하지 않으면 쓰레기 값을 갖는다.
+<br/>
+<br/>
+
+
+
+
+
+## 2. 이동진 바보
 
 이제 실제로 수정하고 배포할 수도록 내 컴퓨터(local)에 Repsitory를 가져와볼 건데요! 먼저 Repository에서 아래와 같이 초록색 Code 버튼을 클릭하면 링크가 나오게 되는데, 이 링크를 복사합니다.
 
-![github-blog-4.png](github-blog-4.png)
 
 그리고 아래 명령어를 수행하여 블로그를 다운로드합니다.
 
@@ -86,23 +135,19 @@ npm run deploy
 
 > 💡 혹시 그 외에 다른 에러가 발생하신다면 아래에 댓글로 에러 내용을 알려주세요!
 
-![github-blog-5.png](github-blog-5.png)
 
 ## 6. Repository Source Branch 변경하기
 
 마지막으로 GitHub 페이지가 작동하려면 GitHub의 Repository 설정에서 배포 할 Branch를 선택해야 합니다. 이를 위해서 Repository에 있는 Settings를 클릭하고 죄측 메뉴에서 Pages를 클릭하여 Github Pages 설정 페이지로 이동합니다.
 
-![github-blog-6.png](github-blog-6.png)
 
 여기서 Source에 있는 Branch를 master(main)에서 gh-pages로 변경한 후에 저장합니다.
 
-![github-blog-7.png](github-blog-7.png)
 
 ## 7. 배포된 페이지 확인하기
 
 이제 실제로 잘 배포가 되었는지 확인해봅시다. 여태까지 문제가 없으셨다면 [GitHubID].github.io에 접근했을 때 블로그가 잘 보이는 것을 확인하실 수 있으실 겁니다.
 
-![github-blog-8.png](github-blog-8.png)
 
 ## 8. 수정하고 배포하기
 
@@ -129,5 +174,4 @@ npm run deploy
 **위 과정을 따라하시면서 궁금하신 점이 있다면 아래 `댓글`로 남겨주세요!👇**
 
 ```toc
-
 ```
