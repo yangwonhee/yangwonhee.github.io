@@ -1,37 +1,30 @@
 ---
-emoji: 🔮
-title: Gatsby 테마로 GitHub Blog 만들기
-date: '2021-07-06 00:00:00'
-author: 줌코딩
-tags: 블로그 github-pages gatsby
-categories: 블로그
+emoji: 👩‍💻
+title: 동적 메모리 할당 과제
+date: '2021-11-28 17:30:00'
+author: 코린이
+tags: 동적메모리 메모리할당 동적메모리할당 malloc C c언어 문법 c언어기초
+categories: c언어
 ---
 
-제 블로그의 테마나 Gatsby의 다른 테마를 활용해서 Github Blog를 만들고 싶은 분들이 계실텐데요! 이런 분들에게 도움을 드리고자 이 글을 쓰게 되었습니다. 잘 안되는 부분이나 궁금한 점을 댓글로 남겨주면 확인해보고 답변 드리도록 하겠습니다!
 
-## 1. Repository 생성하기
+## 1. 문제
 
-GitHub Blog를 만들려면 Github에 Repository를 생성해야 합니다.
+<br/>
 
-![github-blog.png](github-blog.png)
+ 동적 메모리 할당을 사용하여 정수형 배열을 생성하고, 그 배열의 크기만큼 정수를 입력받는다. 이때 같은 정수가 1번 이상 입력될 수 있으며, 중복되지 않은 정수들만을 출력하는 프로그램을 작성하시오. 3가지 다른 데이터에 대해 프로그램을 실행하시오.
 
-GitHub에 로그인 한 뒤에 우측 상단에 있는 New Repository 버튼을 클릭하면 repository 생성 페이지로 이동하게 됩니다. 이 때 Import a repository 버튼을 클릭합니다.
 
-![github-blog-1.png](github-blog-1.png)
+```bash
+배열의 크기를 입력: 10
+정수 입력:10 20 30 10 30 50 60 60 70 10
+출력: 중복되지 않은 정수들 :20 50 70
+```
 
-아래 페이지에 도달하시면 두 가지 정보를 넣어주셔야 하는데, Your old repository's clone URL에는 사용하고자 하는 gatsby 테마가 있는 repository의 주소를 넣어주시면 됩니다.
 
-제 블로그 테마를 쓰고 싶으신 분들은 여기에 [https://github.com/zoomKoding/zoomkoding.com](https://github.com/zoomKoding/zoomkoding.com)를 넣어주세요!
 
-![github-blog-2.png](github-blog-2.png)
 
-그럼 이제 Repository Name을 입력해줍니다. 이 때 주의할 점은 Repository명은 꼭 [GitHubID].github.io로 설정하셔야 합니다.
-
-그리고 Begin Import 버튼을 클릭하고 조금 기다리면 선택하신 블로그 테마를 import한 Repository가 생성되게 됩니다.
-
-![github-blog-3.png](github-blog-3.png)
-
-## 2. Repository 가져오기
+## 2. 코드 설명
 
 이제 실제로 수정하고 배포할 수도록 내 컴퓨터(local)에 Repsitory를 가져와볼 건데요! 먼저 Repository에서 아래와 같이 초록색 Code 버튼을 클릭하면 링크가 나오게 되는데, 이 링크를 복사합니다.
 
@@ -44,16 +37,19 @@ cd [Repository를 저장할 폴더]
 git clone [복사한 주소]
 ```
 
-## 3. Blog 설치하기
+## 3. 코드 전체
 
 이제 블로그를 동작시킬 수 있도록 패키지들을 다운로드 해야하는데, 다음 명령어를 실행하시면 받을 수 있습니다.
+
+![github-blog-3.png](github-blog-3.png)
+
 
 ```bash
 cd [Repository 주소]
 npm install
 ```
 
-## 4. Blog 배포 준비하기
+## 4. 실행화면
 
 그리고 이제 Gatsby 테마를 GitHub 페이지에 올리기 위해 gh-pages라는 패키지를 설치해야 합니다. 설치는 다음 명령어를 실행하시면 됩니다.
 
@@ -127,6 +123,7 @@ npm run deploy
 <br/>
 
 **위 과정을 따라하시면서 궁금하신 점이 있다면 아래 `댓글`로 남겨주세요!👇**
+
 
 ```toc
 
