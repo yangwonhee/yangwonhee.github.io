@@ -1,133 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[코린이 탈출기]]></title><description><![CDATA[코린이 탈출기]]></description><link>https://www.yangwonhee.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 22 Nov 2021 09:00:11 GMT</lastBuildDate><item><title><![CDATA[Gatsby 테마로 GitHub Blog 만들기]]></title><description><![CDATA[제 블로그의 테마나 Gatsby의 다른 테마를 활용해서 Github Blog…]]></description><link>https://www.yangwonhee.github.io/gatsby-github-blog/</link><guid isPermaLink="false">https://www.yangwonhee.github.io/gatsby-github-blog/</guid><pubDate>Mon, 05 Jul 2021 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;제 블로그의 테마나 Gatsby의 다른 테마를 활용해서 Github Blog를 만들고 싶은 분들이 계실텐데요! 이런 분들에게 도움을 드리고자 이 글을 쓰게 되었습니다. 잘 안되는 부분이나 궁금한 점을 댓글로 남겨주면 확인해보고 답변 드리도록 하겠습니다!&lt;/p&gt;
-&lt;h2 id=&quot;1-repository-생성하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-repository-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0&quot; aria-label=&quot;1 repository 생성하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Repository 생성하기&lt;/h2&gt;
-&lt;p&gt;GitHub Blog를 만들려면 Github에 Repository를 생성해야 합니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACIUlEQVQoz32R227TQBCG/Ww8A7xFcwMPwC2qCqRNaudQVHGRC4SQIm5IqiQNAVQpF6hFqM2ZklPTBOfk2Lter/dn7JSoCoKVP83szOzv2R3tfTb7qFAqXZUrn88+fvpSPSmcVgulcrV4Wgn9D/lCNZcvblGieDHMBTZ3UjzL5Qu1t++yES0W1x8fHb2GbqSgJ1JIpI5hJI9xmHiFaDyBfT2JfSOJqJEgDLw0dLwwDhGjeJzOxPQUnj7P4Fn8DaIH8QOtd9PbqQ8a6I+HHIA0naX8PmjK2dKWK+5JQTEXSjJI6cAlK2gvpU9x3LGyHe4rYLawdrXWdTtSG9QxXpie8qFG5gQ/J32sHAbGxT9ZOXyDZTPPZi76w9GeNhwMI9bcgrW0PFrKthmsxQpOIMh4aNf+eh/0Jn0fDokGInfWow/D0e2e1u8PIuZsgQUJukIoxl10+4Pgb1TIwdyt7mgvxH8EJ5NJxJMKSsGj91CcEvQkcKjYFR6EJ+ESIsTHkm5wOWxgFXR/J/qXIMKlQkHbYWo6nSrTXPPLNNf+dE4+2dlcWdxSJKZsJsi6altwR6mgQ8UJjwpowo50GJeM30cQrhRChpMlQUlCf+Ch4M3tbiD4BPfWwrIxnS/DKVvrCdL1grfzNgRX3Wbd4TimlcuVB+cX3zLdbjfZ6/XS9WY7XWu00s32j9C/qjc3XNYa6WarQ7lOmN/Q6iRanevM1/OLh78BcrQRmkf1U+UAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;github-blog.png&quot;
-        title=&quot;github-blog.png&quot;
-        src=&quot;/static/c496970c1925a1fafbb98168e3207240/37523/github-blog.png&quot;
-        srcset=&quot;/static/c496970c1925a1fafbb98168e3207240/e9ff0/github-blog.png 180w,
-/static/c496970c1925a1fafbb98168e3207240/f21e7/github-blog.png 360w,
-/static/c496970c1925a1fafbb98168e3207240/37523/github-blog.png 720w,
-/static/c496970c1925a1fafbb98168e3207240/302a4/github-blog.png 1080w,
-/static/c496970c1925a1fafbb98168e3207240/07a9c/github-blog.png 1440w,
-/static/c496970c1925a1fafbb98168e3207240/e57e0/github-blog.png 4064w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;GitHub에 로그인 한 뒤에 우측 상단에 있는 New Repository 버튼을 클릭하면 repository 생성 페이지로 이동하게 됩니다. 이 때 Import a repository 버튼을 클릭합니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqElEQVQoz5WRyU7jQBBA/W3zDfAX5AJ/geYyhCgEJ2GROCHEzAXIyjIHpByASwSCA05sc0hwnOCt293umirHI0JEkCjpqatcVa9tWftzfLzcaLXua43WdfviqlNvniMXnUb7Ms3P6u3Oaa3ZOfmKs+Y1zjwcHv3OaZuF4mp1dx9KegW2titQru4B1XplB/KFIvzKF6BYKmOvnJ6LKFd3YWOzuKF5nrcC02CInMULmIy4lPPPP4F2IQzDdW0wGOSSJAFEIIpypRQEYQivjgvjNw/c8QSHI2CcA4sZSLwj2/mPoB3HcX5qw+EwRwUGPVRZDmHEYOROppJZUEgSCprNEFSPRqPFwjiOwfd94HhyFMVCfBB9WxgEAVi2DePJBPMQhRLUjGRO/KUw3YsipoaDV8UYVxHC44QaakF8EK5ktzJqIOmf85kvTceSPOZSCCHxDeW09w7VGSwTrpNwDeZCJQqYiOGNBSATumz6eZQnBNZ0zofrunnt8urvj5vbu4PHp6eSZVm6aZq6YRh6r2fqZv9FN/Ds9fspz0Yf63doNmPLtu2Dbre79A8XQB3Mszy2tgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;github-blog-1.png&quot;
-        title=&quot;github-blog-1.png&quot;
-        src=&quot;/static/153e78ed1e400e6710eafc8bf47fbe8d/37523/github-blog-1.png&quot;
-        srcset=&quot;/static/153e78ed1e400e6710eafc8bf47fbe8d/e9ff0/github-blog-1.png 180w,
-/static/153e78ed1e400e6710eafc8bf47fbe8d/f21e7/github-blog-1.png 360w,
-/static/153e78ed1e400e6710eafc8bf47fbe8d/37523/github-blog-1.png 720w,
-/static/153e78ed1e400e6710eafc8bf47fbe8d/302a4/github-blog-1.png 1080w,
-/static/153e78ed1e400e6710eafc8bf47fbe8d/07a9c/github-blog-1.png 1440w,
-/static/153e78ed1e400e6710eafc8bf47fbe8d/e57e0/github-blog-1.png 4064w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;아래 페이지에 도달하시면 두 가지 정보를 넣어주셔야 하는데, Your old repository’s clone URL에는 사용하고자 하는 gatsby 테마가 있는 repository의 주소를 넣어주시면 됩니다.&lt;/p&gt;
-&lt;p&gt;제 블로그 테마를 쓰고 싶으신 분들은 여기에 &lt;a href=&quot;https://github.com/zoomKoding/zoomkoding.com&quot;&gt;https://github.com/zoomKoding/zoomkoding.com&lt;/a&gt;를 넣어주세요!&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVQoz62QzU7CQBDH+2q+g74FXPQtiCc+Uj4ViZ6MQS9KoRU8kfRmGqJ36AX6AbTS0t3uOFtaLEQSYpzkl5n9z8x/txWe2u0zWVE+pJ4yfO2/qV25jwzUnjJQpV5f7XSViGdJPkxHHr5I8uf9w2NWKJbE86tmCyq1BpSrdWhc3yCtKJfEKuRLIhRKZRAr9ajP82/Ur5qQL4p5wXGcDGzCR2gaz/PoarWiQRDQ/d4efBdwNidMp9NsGIaAEITFNVBKwbJsMAwTFksX0npSpyCMMTBN81KYzWZZfsDgIovraBEHwETTORr6/hrCuMdn9iBctyzrsCEhFOz5HI18cFwXXPcLCCU7hkkcZciz4yzB83zAf4gXkOjz0mZHvXAzt3XennleE8redY0tvOWPvhndMczEus8bCMXXIJSug5AGJKRc49CQReeEROe7sWFOMAzjAv4pbNsuCJqmnUwmk9vxeFxBan+krOv63Wg0Ov0GAdofQelOG9cAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;github-blog-2.png&quot;
-        title=&quot;github-blog-2.png&quot;
-        src=&quot;/static/dbe340fff7135c1af7d13df1a3673be1/37523/github-blog-2.png&quot;
-        srcset=&quot;/static/dbe340fff7135c1af7d13df1a3673be1/e9ff0/github-blog-2.png 180w,
-/static/dbe340fff7135c1af7d13df1a3673be1/f21e7/github-blog-2.png 360w,
-/static/dbe340fff7135c1af7d13df1a3673be1/37523/github-blog-2.png 720w,
-/static/dbe340fff7135c1af7d13df1a3673be1/302a4/github-blog-2.png 1080w,
-/static/dbe340fff7135c1af7d13df1a3673be1/07a9c/github-blog-2.png 1440w,
-/static/dbe340fff7135c1af7d13df1a3673be1/e57e0/github-blog-2.png 4064w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;그럼 이제 Repository Name을 입력해줍니다. 이 때 주의할 점은 Repository명은 꼭 [GitHubID].github.io로 설정하셔야 합니다.&lt;/p&gt;
-&lt;p&gt;그리고 Begin Import 버튼을 클릭하고 조금 기다리면 선택하신 블로그 테마를 import한 Repository가 생성되게 됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACDElEQVQoz5WRzXLTMBDH/W68ArxFe6Fv0WGgk+J8qYZyYDh0mGk5QL7LBdImKadkYDgmcWdIsB1JtizbspaVWiCFC+zMf7y78v70l+S8OT19MDgffO72+sNOrzd61+5adfrvR63uAPPeL701anV/9zr9G7V7w1a7/+Xk9dmuc1BxH9bIMRy4TXhcaUCl6kG18RyOnr2AWuMI3FoT3DqBKsrUzeaxzU3vabUBh27dqt704EnFrThBEOzkRQm5AikLULEslcxLpQEU/CHTW6fBX32URAHjfN9ZrVa7WpcAuixQOogoBBsGIY2BCwkiKyDF3ShP4VsYwXT5FSJKQQgBWZ5DWZZGhQGiuUfOer1GoAZUYT40TkFmOTouERzDhkuQCCxKDeYkmVTA4wRzy4CfsyYPw/Au0KxTxkCkqf0x3HD4HjJIZWZrA2EcnScpuvtHIGMcYnRgwsLxaGbdhELXSSLQofgfINMbSrUJyrhOU6nxjmyNQJ0IoaMN1ywW+oZn4w5w5xZoXqrgnCscsq9HKVOUxSqRhRIZvn5WKHSoYh4pkVCVC6nMPrezBrhvgHuwFUmS4DFTm0u8O6XU9tHsPea5gFyihNwehSiKDp3+4Pze5OrTq/HkiuDXG15ceheXIw9rbzSeeOPxhHz4OCTT6Yz4vk/m8zlZLn2y9K/J8toni8XCqI5rL2ez2f0f6/cXevYqyOYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;github-blog-3.png&quot;
-        title=&quot;github-blog-3.png&quot;
-        src=&quot;/static/d0d4283fe9701965b995d91190d8880f/37523/github-blog-3.png&quot;
-        srcset=&quot;/static/d0d4283fe9701965b995d91190d8880f/e9ff0/github-blog-3.png 180w,
-/static/d0d4283fe9701965b995d91190d8880f/f21e7/github-blog-3.png 360w,
-/static/d0d4283fe9701965b995d91190d8880f/37523/github-blog-3.png 720w,
-/static/d0d4283fe9701965b995d91190d8880f/302a4/github-blog-3.png 1080w,
-/static/d0d4283fe9701965b995d91190d8880f/07a9c/github-blog-3.png 1440w,
-/static/d0d4283fe9701965b995d91190d8880f/e57e0/github-blog-3.png 4064w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;2-repository-가져오기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-repository-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0&quot; aria-label=&quot;2 repository 가져오기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Repository 가져오기&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[코린이 탈출기]]></title><description><![CDATA[코린이 탈출기]]></description><link>https://www.yangwonhee.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 28 Nov 2021 08:07:09 GMT</lastBuildDate><item><title><![CDATA[배열과 문자열]]></title><description><![CDATA[이번 2학기에 새로 배우는 내용인 배열부터 포스팅을 하도록 하겠습니다 :)
+ 이전 학기에 배웠던 내용은 이곳에서 볼 수 있습니다. 차근차근 옮길 예정..…]]></description><link>https://www.yangwonhee.github.io/gatsby-github-blog/</link><guid isPermaLink="false">https://www.yangwonhee.github.io/gatsby-github-blog/</guid><pubDate>Thu, 25 Nov 2021 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이번 2학기에 새로 배우는 내용인 배열부터 포스팅을 하도록 하겠습니다 :)
+&lt;br/&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;이전 학기에 배웠던 내용은 &lt;a href=&quot;https://blog.naver.com/friendlilo&quot;&gt;이곳&lt;/a&gt;에서 볼 수 있습니다. 차근차근 옮길 예정..&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;1-배열의-기본&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EB%B0%B0%EC%97%B4%EC%9D%98-%EA%B8%B0%EB%B3%B8&quot; aria-label=&quot;1 배열의 기본 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 배열의 기본&lt;/h2&gt;
+&lt;p&gt;같은 데이터 형의 변수를 메모리에 연속적으로 할당하고, 같은 이름으로 사용하는 방법.
+배열의 각 원소는 메모리에 연속적으로 할당된다.&lt;/p&gt;
+&lt;h3 id=&quot;배열의-선언&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%B0%EC%97%B4%EC%9D%98-%EC%84%A0%EC%96%B8&quot; aria-label=&quot;배열의 선언 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;배열의 선언&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;배열을 선언할 때는 우선, 배열의 &lt;code class=&quot;language-text&quot;&gt;데이터 형&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;배열의 이름&lt;/code&gt;이 필요하고, []안에 &lt;code class=&quot;language-text&quot;&gt;배열의 크기&lt;/code&gt;를 써주어야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;int arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;    // 크기가 &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;인 int 배열의 선언&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;ul&gt;
+&lt;li&gt;배열의 크기는 반드시 0보다 큰 &lt;code class=&quot;language-text&quot;&gt;정수형 상수&lt;/code&gt;로만 지정할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;int arr1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;           // 배열의 크기가 없으므로 컴파일 에러
+int arr2&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;          // 배열의 크기가 &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;이므로 컴파일 에러
+
+int size &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+int arr3&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;size&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;       // 배열의 크기가 변수이므로 컴파일 에러
+int arr4&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;size + &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  // 배열의 크기가 변수를 포함한 수식이므로 컴파일 에러&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;ul&gt;
+&lt;li&gt;배열의 크기는 &lt;code class=&quot;language-text&quot;&gt;매크로 상수&lt;/code&gt;로 지정할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#define MAX 100&lt;/span&gt;
+int arr5&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;MAX&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;      // 매크로 상수로 배열의 크기를 지정할 수 있다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;ul&gt;
+&lt;li&gt;배열의 크기를 구할 때 &lt;code class=&quot;language-text&quot;&gt;sizeof&lt;/code&gt; 연산자를 이용할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;int arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+int size&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+size &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sizeof&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; / sizeof&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;int&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;h3 id=&quot;배열의-사용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%B0%EC%97%B4%EC%9D%98-%EC%82%AC%EC%9A%A9&quot; aria-label=&quot;배열의 사용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;배열의 사용&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;배열을 사용할 때는 첨자 또는 &lt;code class=&quot;language-text&quot;&gt;인덱스&lt;/code&gt;를 이용한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;— 같은 이름의 배열 중 몇 번째 원소인지를 []안에 써준다. &lt;br/&gt;
+— 배열의 인덱스는 항상 0부터 시작하고 하나씩 증가된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;배열을 사용할 때는 for문을 활용한다. (예제 7-1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;for&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i++&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  printf&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;arr[%d] = %d&lt;span class=&quot;token entity&quot; title=&quot;\n&quot;&gt;\n&lt;/span&gt;&quot;&lt;/span&gt;, i, arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;ul&gt;
+&lt;li&gt;배열의 인덱스가 유효 범위를 넘어서지 않아야한다.&lt;/li&gt;
+&lt;li&gt;배열도 따로 초기화를 하지 않으면 쓰레기 값을 갖는다.
+&lt;br/&gt;
+&lt;br/&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;2-이동진-바보&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%EC%9D%B4%EB%8F%99%EC%A7%84-%EB%B0%94%EB%B3%B4&quot; aria-label=&quot;2 이동진 바보 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 이동진 바보&lt;/h2&gt;
 &lt;p&gt;이제 실제로 수정하고 배포할 수도록 내 컴퓨터(local)에 Repsitory를 가져와볼 건데요! 먼저 Repository에서 아래와 같이 초록색 Code 버튼을 클릭하면 링크가 나오게 되는데, 이 링크를 복사합니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACDklEQVQoz5WRy24TMRSG59V4B3iLdgNvUSGo0lwmcVuEBCuEFLU0aS4tKxJplF2awAKySGcqkWQymfGMx7E9Phy7RUphA0f65Ns5v/9jO2fN5rPrz9dfe/2rYbfX987OW975Rdtrd/reRbtrsfPLnvep1fFanZ5dW7pX93T6w8tO/9uHj81957BUfl4jb+Cw0oBXJRdK1ROo1E/h+PQt1OrHUK41oOI2oGqoE2hgbtUldq9crcNRxbW4jRN4XSqXnDAM94QsQCjgXIJKeaG4KJQGUPAHBbLMV3/tIxyBhNIDZ7FY7GuNqbqQiA6jGMIogXWcAmVbyPAWmqaQUlxnKXz/+QOizQYYy2ErBBRFYZBGEM29dJbLJQpqQKQZaMZBSIlJGuIkhSznkCQUVmFohQHvpihuckz8rjXz9Xr9WNCcU0qxd9sBCiawiRPTikWgIymNY4bu/lEwQZHUODGCKJZlzLo1OVIq6/J/BfUmjrWJOKE6z3ONb2TXCkd8Ox1tqE5Spu/1bDwS3HsQNH1KbFlljNnfQ4cK31Hhxyhmfn8rFTpWKY0Uy2IlGFfmnodaI3jgrFarF7ATpkV0Zeecb0Eptdua/QwhGAiOML5bClEUHTnj8fiJ7/vvbm9v6wiZzWZkPp+T6XRKBoMhGY1G5MtgQG5uJiQIAnvm+wHxgzvi3wXE1CAunr2fTCZPfwHdcRiHYUxTZAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;github-blog-4.png&quot;
-        title=&quot;github-blog-4.png&quot;
-        src=&quot;/static/138a6ccf5d2c7ff9d5c762501b9c7ed2/37523/github-blog-4.png&quot;
-        srcset=&quot;/static/138a6ccf5d2c7ff9d5c762501b9c7ed2/e9ff0/github-blog-4.png 180w,
-/static/138a6ccf5d2c7ff9d5c762501b9c7ed2/f21e7/github-blog-4.png 360w,
-/static/138a6ccf5d2c7ff9d5c762501b9c7ed2/37523/github-blog-4.png 720w,
-/static/138a6ccf5d2c7ff9d5c762501b9c7ed2/302a4/github-blog-4.png 1080w,
-/static/138a6ccf5d2c7ff9d5c762501b9c7ed2/07a9c/github-blog-4.png 1440w,
-/static/138a6ccf5d2c7ff9d5c762501b9c7ed2/e57e0/github-blog-4.png 4064w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;그리고 아래 명령어를 수행하여 블로그를 다운로드합니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Repository를 저장할 폴더&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;복사한 주소&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -155,107 +84,94 @@ node -v를 통해 node 버전을 확인하신 후 낮은 버전이라면 업그�
 &lt;blockquote&gt;
 &lt;p&gt;💡 혹시 그 외에 다른 에러가 발생하신다면 아래에 댓글로 에러 내용을 알려주세요!&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 43.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABXElEQVQoz1WSZ47CMBCFcw1a6BB6AgmkAaEt4v4HeptvJLPZHyOPLfu1sbeIQiVJrP1+rziOdTwetV6vdTqdFIahhsOhgiCwGo1G6vV68n3fVte7PavXTTeKj4mqqlJRFLrdboqiSOfzWdfrVbvdzsggWCwW6na7X5Am0B9gtlVeAwFYlqUej4fSNLX+fr9rs9mYaoC3263m87kVPeqbKr8Ky1rN5XIxRah8Pp8Gkue5AaOOGACYzWaaTqeaTCYGhmJX7D0/D1XdKr1/3l9Q7AJMkSuKAc+yzFTTQzIej00tJOTb7/flZUWp1+tlVrkMGA+JgH2SJDocDpYrg1mtVpYliomDKFgpQL3dObVBfD4fswo74Fh1YMvl0i53Op1/FinOXJnloA4XNh7BjAVUwIiiwWCgVquldrv977EDaw7EhvKs1ZAVfw5bWKDnq0DizlDKmbsHKQ7IrTnpX/ZxEl8jXPmdAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;github-blog-5.png&quot;
-        title=&quot;github-blog-5.png&quot;
-        src=&quot;/static/0ea9b8b7bed5ce6018b3da93286b48ae/37523/github-blog-5.png&quot;
-        srcset=&quot;/static/0ea9b8b7bed5ce6018b3da93286b48ae/e9ff0/github-blog-5.png 180w,
-/static/0ea9b8b7bed5ce6018b3da93286b48ae/f21e7/github-blog-5.png 360w,
-/static/0ea9b8b7bed5ce6018b3da93286b48ae/37523/github-blog-5.png 720w,
-/static/0ea9b8b7bed5ce6018b3da93286b48ae/302a4/github-blog-5.png 1080w,
-/static/0ea9b8b7bed5ce6018b3da93286b48ae/07a9c/github-blog-5.png 1440w,
-/static/0ea9b8b7bed5ce6018b3da93286b48ae/17d12/github-blog-5.png 1666w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;6-repository-source-branch-변경하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#6-repository-source-branch-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0&quot; aria-label=&quot;6 repository source branch 변경하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;6. Repository Source Branch 변경하기&lt;/h2&gt;
 &lt;p&gt;마지막으로 GitHub 페이지가 작동하려면 GitHub의 Repository 설정에서 배포 할 Branch를 선택해야 합니다. 이를 위해서 Repository에 있는 Settings를 클릭하고 죄측 메뉴에서 Pages를 클릭하여 Github Pages 설정 페이지로 이동합니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB90lEQVQoz5WS227TQBBA/W/8Av2L5gX+okJcErm5GKO+IB4QUii9hECSwkuQaUAgAjziXFTJaWyvN/auvZdh1kkhlVAl1j7aWXt0NOOxddhu7/QG/R9n794P+4Mz7+Xhiffq+BTpeEcnXe+488Y7ff3233R7Vww73d7P5y/aFeth1b5Tdw7gkd2C+9UmVPddsJtPwHEPoN58DHa9BXajtd63aThQ229CzW6UNFouPKjaVWsZRrtCARQSOCtAplxLjCXAf8ERSCjds4IgqGiNRq0FaKUJIZBmGRRCQBgRSBIKAuOiKP5gzkopTEe0NrEwwuVyec9aLBYV8xBvgbuOCYWMcRRKCFgI89UFzNNLmCEX7BIWxbIkVBFEKgalS2kpDMPwrxDXRpgAz4tSGMYRxJQAoQmkLAVW5CCwKnNJFG1kNwsJtnglDIIFth0DyxgwloNUZR5+Hri2bq4wJhqFWgipKV3pjDHNOdeccZ3n+ZpCaJTrUrVe14S7GyE3L1arVHKeS4wlpVQSkkjzDOUyzZhknEuzyulijgFz+Ua4Z4R3t0ovp6eULjFtr9s3UxYYS5ww/lMmB2swbHcfRVHN6vUHt85Hn559PB85iDv84Lmjz1/cr9++u74/dSbTmTObrfEneN7wy584PmLi6XTamM/nT8fj8e3fVu4Y+eh3RvQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;github-blog-6.png&quot;
-        title=&quot;github-blog-6.png&quot;
-        src=&quot;/static/338e207ee37735587d9326b12dad5b66/37523/github-blog-6.png&quot;
-        srcset=&quot;/static/338e207ee37735587d9326b12dad5b66/e9ff0/github-blog-6.png 180w,
-/static/338e207ee37735587d9326b12dad5b66/f21e7/github-blog-6.png 360w,
-/static/338e207ee37735587d9326b12dad5b66/37523/github-blog-6.png 720w,
-/static/338e207ee37735587d9326b12dad5b66/302a4/github-blog-6.png 1080w,
-/static/338e207ee37735587d9326b12dad5b66/07a9c/github-blog-6.png 1440w,
-/static/338e207ee37735587d9326b12dad5b66/e57e0/github-blog-6.png 4064w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;여기서 Source에 있는 Branch를 master(main)에서 gh-pages로 변경한 후에 저장합니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8klEQVQoz32Ry27TQBSG/Wq8A7xFs4F36CLQgBrRFLUVBdEdSG1zD12mquRtFME6F0pjx3Y89lzs8fwcT4LU0IiRPp0z/5n558yM02lev+gPBj8ur1t3zVbXvbpqu8121211em6nN3A73b7bpdgb3JDesXqbKNf0+t/d4fDWHd7e3vUHNz+/frusOPsHRy9rR+eo1k/xun6Gt41PeHf82XLw/iPpZ1YvqR6e2vkTSK81zrFfaxw6k1/ens9y+KyQfgLtMeiIQ6sCOjMUCanXeY5tSl3kNkqq42G5qjqLxUNFUznPs1wpZTjnEFKCcqQpgxIcBdVNQRamIPQWRUGQgaHacum/cTzPq2A9aAfMMgiRpAK5LrAIUjo1RsQkAqYsUaIQ8wycWhKEoc6MMeVeBEGwNiQBpNMpxkSrGFJlyHINP1b4HQrcLznuQ2XxmEaYFgiIMhaF2W2IHYa0AFEUgcUxBF1da41d47+GMUsMGRoyNAvPN6tVbMq3FVJZjUxtpM7sxTZjy3BvYyjLQsyYVrSD3lDHMdNJmmr6KM1TrqWUFiprMtS0/i9yY1h1fN9/9bh9ISSyzB4IzgVYkoALgZR+nwtFv5/RuxU7rx6GYd0ZjUbPZrPZl+l0+oE4ofykjI/zyWTyRPuH4/l8fjEej5//AXohGKlgO+2ZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;github-blog-7.png&quot;
-        title=&quot;github-blog-7.png&quot;
-        src=&quot;/static/d71c3cfa77f66a359e31914c9779e78f/37523/github-blog-7.png&quot;
-        srcset=&quot;/static/d71c3cfa77f66a359e31914c9779e78f/e9ff0/github-blog-7.png 180w,
-/static/d71c3cfa77f66a359e31914c9779e78f/f21e7/github-blog-7.png 360w,
-/static/d71c3cfa77f66a359e31914c9779e78f/37523/github-blog-7.png 720w,
-/static/d71c3cfa77f66a359e31914c9779e78f/302a4/github-blog-7.png 1080w,
-/static/d71c3cfa77f66a359e31914c9779e78f/07a9c/github-blog-7.png 1440w,
-/static/d71c3cfa77f66a359e31914c9779e78f/e57e0/github-blog-7.png 4064w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;7-배포된-페이지-확인하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#7-%EB%B0%B0%ED%8F%AC%EB%90%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0&quot; aria-label=&quot;7 배포된 페이지 확인하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;7. 배포된 페이지 확인하기&lt;/h2&gt;
 &lt;p&gt;이제 실제로 잘 배포가 되었는지 확인해봅시다. 여태까지 문제가 없으셨다면 [GitHubID].github.io에 접근했을 때 블로그가 잘 보이는 것을 확인하실 수 있으실 겁니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABk0lEQVQoz5VSS07DMBTs1bgDnIKygR1HQGyADShbEEfgCJWyQFGqChqVTZO4+adJ821dP95zPm1RJWCkkTPPzxPb48GXYZwFof8RL5NRFMeq64eqH8TqwvFU02JSe0HU02aOynDObzWNjhuMLOZ8To3ZxcD3/UshBPDtFrZI+ibUdQ1pmgLnXNY61us1lFUF1NbVunVhGN6T4RAaVEjeERv4vu5q2WrV6L15rNNaiKLohgwv2j9tRAPpXpYleJ4HcRxDnueyNtXf4e76HAJ3IbVod0ZrW8Pb3hBxYEgmjuNQkzw+IXZM0N5eocxXjeHuKn437MYeP/T+/J8MKYwkSaAoSnnppDebTR/Sf3ZIQuCRBWO2CIJALJdLEUWhHJMkFXgFovHrcWA4bP9StcHI5Mqi4J7rcgyGuzjiE+IYFK+riuNO+9Rb7lLGHVzBEVDKaIQpR/S+IMsyqPD9UZ2OfQz4Ih4G4/H4xLKsZ9M0n5AKEbUym80UTdMUXdcVwzAUxpisE+fzudL1tny0bftlMpmcfgOkfjsLiw7HXgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;github-blog-8.png&quot;
-        title=&quot;github-blog-8.png&quot;
-        src=&quot;/static/103be36c7556a35b794180d024aed322/37523/github-blog-8.png&quot;
-        srcset=&quot;/static/103be36c7556a35b794180d024aed322/e9ff0/github-blog-8.png 180w,
-/static/103be36c7556a35b794180d024aed322/f21e7/github-blog-8.png 360w,
-/static/103be36c7556a35b794180d024aed322/37523/github-blog-8.png 720w,
-/static/103be36c7556a35b794180d024aed322/302a4/github-blog-8.png 1080w,
-/static/103be36c7556a35b794180d024aed322/07a9c/github-blog-8.png 1440w,
-/static/103be36c7556a35b794180d024aed322/e57e0/github-blog-8.png 4064w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;8-수정하고-배포하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#8-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0&quot; aria-label=&quot;8 수정하고 배포하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;8. 수정하고 배포하기&lt;/h2&gt;
+&lt;p&gt;블로그를 수정하시는 방법은 각 블로그 테마마다 다를텐데요. 그에 맞춰서 변동사항을 commit하신 후에 아래 명령어를 실행하시면 변동사항이 블로그에 배포됩니다!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;h2 id=&quot;️-이-블로그-테마를-이용하고-싶으시다면&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EF%B8%8F-%EC%9D%B4-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9C%BC%EC%8B%9C%EB%8B%A4%EB%A9%B4&quot; aria-label=&quot;️ 이 블로그 테마를 이용하고 싶으시다면 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;⭐️ 이 블로그 테마를 이용하고 싶으시다면!&lt;/h2&gt;
+&lt;p&gt;마지막으로 제 블로그 테마를 활용하고 싶으시다면 아래 링크를 참고해주세요!
+&lt;a href=&quot;https://www.zoomkoding.com/gatsby-starter-zoomkoding-introduction&quot;&gt;https://www.zoomkoding.com/gatsby-starter-zoomkoding-introduction&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;궁금하신 점이 있으시다면 &lt;a href=&quot;https://github.com/zoomKoding/zoomkoding-gatsby-blog/issues/new&quot;&gt;이슈&lt;/a&gt;로 남겨주시면 최대한 빠르게 답변 드리도록 하겠습니다!🙋‍♂️&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🤔 혹시 특정 기능이 없어서 테마 사용을 망설이시거나 제안하고 싶으신 기능이 있으시다면,&lt;br&gt;
+👉 &lt;a href=&quot;https://github.com/zoomKoding/zoomkoding-gatsby-blog/issues/40&quot;&gt;여기&lt;/a&gt;에 댓글 남겨주세요! 적극적으로 반영하겠습니다 :)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;strong&gt;위 과정을 따라하시면서 궁금하신 점이 있다면 아래 &lt;code class=&quot;language-text&quot;&gt;댓글&lt;/code&gt;로 남겨주세요!👇&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#1-%EB%B0%B0%EC%97%B4%EC%9D%98-%EA%B8%B0%EB%B3%B8&quot;&gt;1. 배열의 기본&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%EB%B0%B0%EC%97%B4%EC%9D%98-%EC%84%A0%EC%96%B8&quot;&gt;배열의 선언&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%EB%B0%B0%EC%97%B4%EC%9D%98-%EC%82%AC%EC%9A%A9&quot;&gt;배열의 사용&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#2-%EC%9D%B4%EB%8F%99%EC%A7%84-%EB%B0%94%EB%B3%B4&quot;&gt;2. 이동진 바보&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#3-blog-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0&quot;&gt;3. Blog 설치하기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#4-blog-%EB%B0%B0%ED%8F%AC-%EC%A4%80%EB%B9%84%ED%95%98%EA%B8%B0&quot;&gt;4. Blog 배포 준비하기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#5-blog-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0&quot;&gt;5. Blog 배포하기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#6-repository-source-branch-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0&quot;&gt;6. Repository Source Branch 변경하기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#7-%EB%B0%B0%ED%8F%AC%EB%90%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0&quot;&gt;7. 배포된 페이지 확인하기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#8-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0&quot;&gt;8. 수정하고 배포하기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%EF%B8%8F-%EC%9D%B4-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9C%BC%EC%8B%9C%EB%8B%A4%EB%A9%B4&quot;&gt;⭐️ 이 블로그 테마를 이용하고 싶으시다면!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Gatsby 테마로 GitHub Blog 만들기]]></title><description><![CDATA[제 블로그의 테마나 Gatsby의 다른 테마를 활용해서 Github Blog…]]></description><link>https://www.yangwonhee.github.io/C/index copy/</link><guid isPermaLink="false">https://www.yangwonhee.github.io/C/index copy/</guid><pubDate>Mon, 05 Jul 2021 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;제 블로그의 테마나 Gatsby의 다른 테마를 활용해서 Github Blog를 만들고 싶은 분들이 계실텐데요! 이런 분들에게 도움을 드리고자 이 글을 쓰게 되었습니다. 잘 안되는 부분이나 궁금한 점을 댓글로 남겨주면 확인해보고 답변 드리도록 하겠습니다!&lt;/p&gt;
+&lt;h2 id=&quot;1-repository-생성하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-repository-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0&quot; aria-label=&quot;1 repository 생성하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Repository 생성하기&lt;/h2&gt;
+&lt;p&gt;GitHub Blog를 만들려면 Github에 Repository를 생성해야 합니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;github-blog.png&quot; alt=&quot;github-blog.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;GitHub에 로그인 한 뒤에 우측 상단에 있는 New Repository 버튼을 클릭하면 repository 생성 페이지로 이동하게 됩니다. 이 때 Import a repository 버튼을 클릭합니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;github-blog-1.png&quot; alt=&quot;github-blog-1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;아래 페이지에 도달하시면 두 가지 정보를 넣어주셔야 하는데, Your old repository’s clone URL에는 사용하고자 하는 gatsby 테마가 있는 repository의 주소를 넣어주시면 됩니다.&lt;/p&gt;
+&lt;p&gt;제 블로그 테마를 쓰고 싶으신 분들은 여기에 &lt;a href=&quot;https://github.com/zoomKoding/zoomkoding.com&quot;&gt;https://github.com/zoomKoding/zoomkoding.com&lt;/a&gt;를 넣어주세요!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;github-blog-2.png&quot; alt=&quot;github-blog-2.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;그럼 이제 Repository Name을 입력해줍니다. 이 때 주의할 점은 Repository명은 꼭 [GitHubID].github.io로 설정하셔야 합니다.&lt;/p&gt;
+&lt;p&gt;그리고 Begin Import 버튼을 클릭하고 조금 기다리면 선택하신 블로그 테마를 import한 Repository가 생성되게 됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;github-blog-3.png&quot; alt=&quot;github-blog-3.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-repository-가져오기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-repository-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0&quot; aria-label=&quot;2 repository 가져오기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Repository 가져오기&lt;/h2&gt;
+&lt;p&gt;이제 실제로 수정하고 배포할 수도록 내 컴퓨터(local)에 Repsitory를 가져와볼 건데요! 먼저 Repository에서 아래와 같이 초록색 Code 버튼을 클릭하면 링크가 나오게 되는데, 이 링크를 복사합니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;github-blog-4.png&quot; alt=&quot;github-blog-4.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;그리고 아래 명령어를 수행하여 블로그를 다운로드합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Repository를 저장할 폴더&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;복사한 주소&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;3-blog-설치하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-blog-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0&quot; aria-label=&quot;3 blog 설치하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Blog 설치하기&lt;/h2&gt;
+&lt;p&gt;이제 블로그를 동작시킬 수 있도록 패키지들을 다운로드 해야하는데, 다음 명령어를 실행하시면 받을 수 있습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Repository 주소&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;4-blog-배포-준비하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-blog-%EB%B0%B0%ED%8F%AC-%EC%A4%80%EB%B9%84%ED%95%98%EA%B8%B0&quot; aria-label=&quot;4 blog 배포 준비하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Blog 배포 준비하기&lt;/h2&gt;
+&lt;p&gt;그리고 이제 Gatsby 테마를 GitHub 페이지에 올리기 위해 gh-pages라는 패키지를 설치해야 합니다. 설치는 다음 명령어를 실행하시면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; gh-pages --save-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그리고 나서 package.json에 다음을 추가합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;deploy&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;gatsby build &amp;amp;&amp;amp; gh-pages -d public&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 추가&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;5-blog-배포하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-blog-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0&quot; aria-label=&quot;5 blog 배포하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. Blog 배포하기&lt;/h2&gt;
+&lt;p&gt;드디어 배포 준비는 다 끝났습니다. 이제 다음 명령을 실행하시면 github page에 배포하실 수 있습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;조금 기다리신 후에 다음과 같이 &lt;code class=&quot;language-text&quot;&gt;Published&lt;/code&gt;라는 메시지를 받으셨다면 배포는 잘 끝났습니다!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🙋‍♂️ 제 블로그 템플릿을 사용하시는 분들을 &lt;code class=&quot;language-text&quot;&gt;node 버전이 14 이상&lt;/code&gt;이어야 합니다.
+node -v를 통해 node 버전을 확인하신 후 낮은 버전이라면 업그레이드를 진행해주세요!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;💡 혹시 그 외에 다른 에러가 발생하신다면 아래에 댓글로 에러 내용을 알려주세요!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;github-blog-5.png&quot; alt=&quot;github-blog-5.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;6-repository-source-branch-변경하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#6-repository-source-branch-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0&quot; aria-label=&quot;6 repository source branch 변경하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;6. Repository Source Branch 변경하기&lt;/h2&gt;
+&lt;p&gt;마지막으로 GitHub 페이지가 작동하려면 GitHub의 Repository 설정에서 배포 할 Branch를 선택해야 합니다. 이를 위해서 Repository에 있는 Settings를 클릭하고 죄측 메뉴에서 Pages를 클릭하여 Github Pages 설정 페이지로 이동합니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;github-blog-6.png&quot; alt=&quot;github-blog-6.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;여기서 Source에 있는 Branch를 master(main)에서 gh-pages로 변경한 후에 저장합니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;github-blog-7.png&quot; alt=&quot;github-blog-7.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;7-배포된-페이지-확인하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#7-%EB%B0%B0%ED%8F%AC%EB%90%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0&quot; aria-label=&quot;7 배포된 페이지 확인하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;7. 배포된 페이지 확인하기&lt;/h2&gt;
+&lt;p&gt;이제 실제로 잘 배포가 되었는지 확인해봅시다. 여태까지 문제가 없으셨다면 [GitHubID].github.io에 접근했을 때 블로그가 잘 보이는 것을 확인하실 수 있으실 겁니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;github-blog-8.png&quot; alt=&quot;github-blog-8.png&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;8-수정하고-배포하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#8-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0&quot; aria-label=&quot;8 수정하고 배포하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;8. 수정하고 배포하기&lt;/h2&gt;
 &lt;p&gt;블로그를 수정하시는 방법은 각 블로그 테마마다 다를텐데요. 그에 맞춰서 변동사항을 commit하신 후에 아래 명령어를 실행하시면 변동사항이 블로그에 배포됩니다!&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
