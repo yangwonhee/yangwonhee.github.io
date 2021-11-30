@@ -1,6 +1,6 @@
 module.exports = {
-  title: `코린이 탈출기`,
-  description: `코린이 탈출기`,
+  title: `yangwonhee.com`,
+  description: `대학 5학년 다니는 복전생.`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://www.yangwonhee.github.io`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
