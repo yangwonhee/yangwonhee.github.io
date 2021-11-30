@@ -120,6 +120,15 @@ int main(){
 
 **위 코드를 참조하시면서 궁금하신 점이 있다면 아래 `댓글`로 남겨주세요!👇**
 
+<script src="https://utteranc.es/client.js"
+        repo="yangwonhee/blog-comments"
+        issue-term="pathname"
+        label="😈"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
 
 ```toc
 
