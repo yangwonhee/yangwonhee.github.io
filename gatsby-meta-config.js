@@ -6,12 +6,7 @@ module.exports = {
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      src = `https://utteranc.es/client.js`,
       repo: `yangwonhee.github.io/comments`, // `yangwonhee/yangwonhee-gatsby-blog`,
-      issueterm: `pathname`,
-        label: `👿`,
-        theme: `github-light`,
-        crossorigin: `anonymous`,
     },
   },
   ga: '0', // Google Analytics Tracking ID
