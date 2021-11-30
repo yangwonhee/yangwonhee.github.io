@@ -10,7 +10,6 @@ module.exports = {
     utterances: {
       src: "https://utteranc.es/client.js",
       repo: `yangwonhee.github.io/comments`, // `yangwonhee/yangwonhee-gatsby-blog`,
-      thene: github-light,
     },
   },
   ga: '0', // Google Analytics Tracking ID
