@@ -1,12 +1,17 @@
 module.exports = {
   title: `yangwonhee.com`,
-  description: `대학 5학년 다니는 복전생.`,
+  description: `대학 5년 다니는 복전생.`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://www.yangwonhee.github.io`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: ``, // `yangwonhee/yangwonhee-gatsby-blog`,
+      src = `https://utteranc.es/client.js`,
+      repo: `yangwonhee.github.io/comments`, // `yangwonhee/yangwonhee-gatsby-blog`,
+      issueterm: `pathname`,
+        label: `👿`,
+        theme: `github-light`,
+        crossorigin: `anonymous`,
     },
   },
   ga: '0', // Google Analytics Tracking ID
