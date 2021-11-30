@@ -1,3 +1,5 @@
+const { light } = require("@material-ui/core/styles/createPalette");
+
 module.exports = {
   title: `yangwonhee.com`,
   description: `대학 5년 다니는 복전생.`,
@@ -6,7 +8,9 @@ module.exports = {
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
+      src: "https://utteranc.es/client.js",
       repo: `yangwonhee.github.io/comments`, // `yangwonhee/yangwonhee-gatsby-blog`,
+      thene: github-light,
     },
   },
   ga: '0', // Google Analytics Tracking ID
