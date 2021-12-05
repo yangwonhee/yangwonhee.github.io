@@ -20,14 +20,14 @@ categories: c언어
 - 배열을 선언할 때는 우선, 배열의 `데이터 형`, `배열의 이름`이 필요하고, []안에 `배열의 크기`를 써주어야 한다.
 
 
-```bash
+```c
 int arr[5];    // 크기가 5인 int 배열의 선언
 ```
 <br/>
 
 - 배열의 크기는 반드시 0보다 큰 `정수형 상수`로만 지정할 수 있다.
 
-```bash
+```c
 int arr1[];           // 배열의 크기가 없으므로 컴파일 에러
 int arr2[0];          // 배열의 크기가 0이므로 컴파일 에러
 
@@ -40,7 +40,7 @@ int arr4[size + 10];  // 배열의 크기가 변수를 포함한 수식이므로
 
 - 배열의 크기는 `매크로 상수`로 지정할 수 있다.
 
-```bash
+```c
 #define MAX 100
 int arr5[MAX];      // 매크로 상수로 배열의 크기를 지정할 수 있다.
 ```
@@ -48,7 +48,7 @@ int arr5[MAX];      // 매크로 상수로 배열의 크기를 지정할 수 있
 
 - 배열의 크기를 구할 때 `sizeof` 연산자를 이용할 수 있다.
 
-```bash
+```c
 int arr[5];
 int size;
 size = sizeof(arr) / sizeof(int);
@@ -65,7 +65,7 @@ size = sizeof(arr) / sizeof(int);
 
 - 배열을 사용할 때는 for문을 활용한다. (예제 7-1)
 
-```bash
+```c
 for(i = 0; i < 5; i++){
   printf("arr[%d] = %d\n", i, arr[i]);
 }
@@ -74,8 +74,7 @@ for(i = 0; i < 5; i++){
 
 - 배열의 인덱스가 유효 범위를 넘어서지 않아야한다.
 - 배열도 따로 초기화를 하지 않으면 쓰레기 값을 갖는다.
-<br/>
-<br/>
+<br/><br/>
 
 
 
@@ -88,7 +87,7 @@ for(i = 0; i < 5; i++){
 
 그리고 아래 명령어를 수행하여 블로그를 다운로드합니다.
 
-```bash
+```c
 cd [Repository를 저장할 폴더]
 git clone [복사한 주소]
 ```
@@ -97,7 +96,7 @@ git clone [복사한 주소]
 
 이제 블로그를 동작시킬 수 있도록 패키지들을 다운로드 해야하는데, 다음 명령어를 실행하시면 받을 수 있습니다.
 
-```bash
+```c
 cd [Repository 주소]
 npm install
 ```
@@ -106,7 +105,7 @@ npm install
 
 그리고 이제 Gatsby 테마를 GitHub 페이지에 올리기 위해 gh-pages라는 패키지를 설치해야 합니다. 설치는 다음 명령어를 실행하시면 됩니다.
 
-```bash
+```c
 npm install gh-pages --save-dev
 ```
 
@@ -124,7 +123,7 @@ npm install gh-pages --save-dev
 
 드디어 배포 준비는 다 끝났습니다. 이제 다음 명령을 실행하시면 github page에 배포하실 수 있습니다.
 
-```bash
+```c
 npm run deploy
 ```
 
@@ -153,7 +152,7 @@ npm run deploy
 
 블로그를 수정하시는 방법은 각 블로그 테마마다 다를텐데요. 그에 맞춰서 변동사항을 commit하신 후에 아래 명령어를 실행하시면 변동사항이 블로그에 배포됩니다!
 
-```bash
+```c
 npm run deploy
 ```
 
