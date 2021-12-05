@@ -1,7 +1,7 @@
 ---
 emoji: 😶‍🌫️
 title: [C언어] 포인터
-date: '2021-12-05 14:45:00'
+date : '2021-12-05 14:45:00'
 author: 코린이
 tags: C c언어 문법 c언어기초
 categories: c언어
