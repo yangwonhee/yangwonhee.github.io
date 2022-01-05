@@ -8,113 +8,330 @@ categories: SW융합코딩
 ---
 
 
+`SW융합코딩` 강의를 수강하며 네이버 블로그에 기록해 두었다. 그게 벌써 작년이라니 🥲 
 
-## ☁️ HTML의 구성요소
+시간은 순식간에 흘러가는데 내 실력은 왜 ... 🤦‍♀️
+
+네이버 블로그 글들 중 조회수가 유난히 많은 글들을 옮겨놓으려고 한다. 그 중에서도 조회수가 1500이 넘은 이 글부터 옮기기...
+
+원문은 [_여기_](https://blog.naver.com/friendlilo/222316107898, "네이버블로그") 에 있습니다. ~~근데 원문보다 이 글이 더 깔끔해요 ㅎㅎ 아마도..~~
+
 <br/>
 
-__요소 (Elements)__ <br/>
-HTML에서 시작 태그와 종료 태그로 이루어진 모든 명령어들을 의미한다.
+## 🐬 __do while 문__
+<br/>
 
-__태그 (Tag)__ <br/>
-요소(Elements)의 일부로 시작 태그와 종료 태그 두 종류가 있다. <br/>
-시작 태그는 요소를 시작하며, 종료 태그는 요소를 끝내는 기능을 가지고 있다. 일부 태그 중에는 종료 태그가 없는 것도 있다. 
+적어도 한 번은 무조건 실행하고, while의 조건이 참이라면 do 안의 문장들을 반복한다.
 
-```html
-<p>요소</p>
-<p align = "center">태그에 속성을 부여하면 태그의 성격을 좀 더 구체화 시킬 수 있다.</p>
+```c
+do{
+문장1;
+문장2;
+...
+} while (조건);
 ```
 
 
 <br/>
 
-`<p>`태그 안에 align이라는 속성(attributes, 애트리뷰트)를 사용한다면, 문단 안의 정렬을 설정할 수 있다.
+_# 예제 1_ : 사용자가 0을 입력할 때 까지 숫자를 더한다.
 
-__변수(Arguments)__ <br/>
-속성과 관련 된 값으로, 위의 코드에서처럼 align 이라는 속성의 center 라는 변수를 지정하였다.
+```c
+#include <stdio.h>
+int main(){
+    int number, sum = 0;
+    do{
+        printf("정수를 입력하시오.: ");
+        scanf("%d", &number);
+        sum += number;
+    } while(number != 0);
+
+    printf("입력받은 숫자 합 = %d\n", sum);
+    return 0;
+}
+```
 
 
-<br/><br/><br/>
-
-
-## 🌩 HTML의 기본구성
 <br/>
-HTML문서는 기본적으로 HEAD, BODY로 구분된다. <br/> HEAD안의 내용은 화면에 직접적으로 출력되지는 않지만, 웹브라우저가 알아야 할 중요한 정보가 포함되어 있다. <br/> BODY안의 내용은 화면에 직접 출력되는 부분이다.
+_# 예제 2_ : do while 문을 이용한 메뉴 구성
+
+```c
+#include <stdio.h>
+
+int main(){
+    int i = 0;
+    do {
+        printf("1--- 새로만들기\n");
+        printf("2--- 파일열기\n");
+        printf("3--- 파일닫기\n");
+        printf("하나를 선택하시오.\n");
+        scanf("%d", &i);
+    } while(i < 1 || i > 3);
+
+    printf("선택된 메뉴 = %d\n", i);
+    return 0;
+}
+```
+
+<br/>
+
+_# lab_ : 숫자 추측 게임 <br/>
+프로그램이 가지고 있는 정수를 사용자가 맞추는 게임. (up down게임)
+```c
+#include <stdio.h>
+int main(){
+    int answer = 59;
+    int guess;
+    int tries = 0;
+    do {
+        printf("number? ");
+        scanf("%d", &guess);
+        tries++;
+        if(guess > answer)
+            printf("down\n");
+        if(guess < answer)
+            printf("up\n");
+    } while (guess != answer);
+    printf("correct! tires: %d\n", tries);
+    return 0;
+
+```
+
+<br/>
+
+
+_# 도전문제!_
+
+위의 프로그램이 게임이 되려면 난수를 발생시키는 것이 좋다. 난수는 (rand()%100)으로 발생이 가능하다. stdlib.h 헤더 파일도 포함시켜야 한다.
+
+​
+를 위한 난수 생성의 개념과 적용 👇
+​
+
+​
+
+## 🐳 __난수 생성__
+
+1. 라이브러리 함수를 이용한 난수 생성
+
+2. 주어진 범위 안에서 난수 생성
+
+3. 실수형 난수의 생성
+
+> 난수(random number): 특정한 배열순서나 규칙을 가지지않는, 연속적인 임의의 수 (로또복권 당첨번호)
+
+> 난수는 주로 컴퓨터 게임이나 모의실험(simulation)에 사용 됨.
+
+
+1. 라이브러리 함수를 이용한 난수 생성 <br/>
+rand라는 라이브러리 함수를 사용. <br/>
+함수 rand는 0 <= rand() <= 32767 범위 내에서 임의의 정수 난수 한 개를 반환 <br/> <br/>
+
+__난수와 관련된 라이브러리 함수__ 
+
+|함수 원형|사용|반환 값|컴파일러|
+|-----------|-------|----|--------|
+|int rand(void);|난수 생성|0~32767사이의 정수|visual c++, turbo c/c++|
+|void srand (unsigned int seed);|난수 초기화|없음|visual c++, turbo c/c++|
+|void randomize (void);|난수 초기화|없음|turbo c/c++|
+
+
 <br/> 
+
+매 실행마다 다른 난수를 생성하려면 함수 srand의 인수를 실행마다 다르게 설정해야 하는데 이때 현재의 시간값을 이용. 시간은 함수 time을 이용.
+
+_# 예시_
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+    int i;
+    srand(time(NULL));
+    for(i = 1; i <= 10; i++){
+        printf("%2d: %d\n", i, rand());
+    }
+    return 0;
+}
+```
+
+<br/> <br/> 
+
+2. 범위 내의 난수 생성 <br/>
+로또 복권과 같이 1부터 45사이 또는 0부터 99사이와 같이 특정한 범위(구간) 내에서의 난수를 생성하는 방법. <br/>
+`특정한 범위`내의 정수 난수를 생성하려면 함수 `rand`에 대해 아래와 같이 나머지 연산자 `%`와 `덧셈` 또는 뺄셈을 적절히 사용.
 <br/>
 
-```html
-<HTML> ... </HTML>
-```
+​|정수 난수 생성범위|프로그램 연산식|설명|
+|-----|-------|----|
+|1 <= 정수난수 <= 6|rand()%6 + 1;|6으로 나눈 나머지 값의 범위는 0~5인데 이 값에 1을 더하므로 1~6 사이의 난수 생성.|
+|1 <= 정수난수 <= 45|rand()%45 + 1;|45로 나눈 나머지 값의 범위는 0~44인데 이 값에 1을 더하므로 1~45 사이의 난수 생성.|
+|0 <= 정수난수 <= 99|rand()%100;|100으로 나눈 나머지 값의 범위는 0~99이므로 0~99 사이의 난수 생성.|
+|10  <= 정수난수 <= 30|rand()%21 + 10;|21으로 나눈 나머지 값의 범위는 0~20인데 이 값에 10을 더하므로 10~30 사이의 난수 생성.|
+|-5 <= 정수난수 <= +5|rand()%11 - 5;|11으로 나눈 나머지 값의 범위는 0~10인데 이 값에 5을 감해주면 -5~+5 사이의 난수 생성.|
 
-> 이는 HTML문서의 시작과 끝을 의미하는 태그로서, 작성된 문서가 HTML을 사용한 문서임을 나타낸다. <br/>
-시작태그인 `<HTML>`은 앞쪽에, 종료태그인 `</HTML>`은 문서의 마지막에 두어 소스 전체를 감싸주어야 한다. 즉, `<HTML>`태그 안에 `<HEAD>`와 `<BODY>`태그가 차례로 위치하여야 한다.
-
-<br/><br/>
-
-```html
-<HEAD> ... </HEAD>
-```
-> `<HEAD>`는 HTML문서에 관한 기본 정보를 포함하고 있는 부분으로, 주로 문서의 제목, 제작자, 문서정보 등이 포함될 수 있다.
-
-<br/><br/>
-
-```html
-<TITLE> - 문서 상단의 제목 설정
-<META> - 문서 정보 설정
-<script> - javascript 언어 등을 사용한 다양한 프로그램이 위치하는 공간이기도 하다.
-<Style> - 문서의 장식
-```
-
-위와 같은 태그를 적어주더라도 실제 화면 상에서는 아무런 내용이 출력되지 않는다.<br/>
-그렇다면, 왜 이런 태그를 적어야 할까?<br/>
-이는 HTML태그를 읽는 웹브라우저에게 필요한 내용을 알려주는 역할을 하는 태그들이다. <br/>
-예를들어 `<TITLE>`과 같은 경우에는 화면에는 출력되지 않으나, 웹브라우저의 제목 표시줄에 출력이된다.
-
-<br/><br/>
-
-```html
-<BODY> ... </BODY>
-```
-> HTML 문서의 본문에 해당하는 곳으로, 실제 화면에 나타나는 내용을 태그 사이에 기술한다. 즉, 사용자가 웹브라우저 상에 표현하고자 하는 내용들을 다양한 태그를 사용하여 구성하는 부분으로, 웹문서의 대부분을 차지하게 된다.
-
-<br/><br/><br/>
-
-## ⛈ HTML 문서의 본문을 의미하는 BODY 태그
-`<BODY>`와 `<BODY>` 태그 사이에 본문이 위치한다. 태그의 주요 속성으로는 `bgcolor`, `leftmargin`, `topmargin`이 있다.
-<br/>
-
-1. bgcolor <br/>
-본문의 배경색을 지정한다. 
-```html
-<body bgcolor = "gray">
-```
-
-2. leftmargin <br/>
-본문의 왼쪽 여백을 지정한다.
-```html
-<body leftmargin = "100">
-```
-
-3. topmargin <br/>
-본문의 상단 여백을 지정한다.
-```html
-<body topmargin = "100">
-```
-
-<br/><br/><br/>
-
-## 🌧 주석(Comment)
-HTML에서 주석을 사용하려면 `<!--`와 `-->` 사이에 내용을 넣으면 된다.
-```html
-<!-- 주석 내용 -->
-```
 
 <br/><br/>
 
 
-**이 글의 `출처`로!👇**
+_# 예시_ : 주사위 10번 던져서 나온 눈금의 출력.
 
-[홈짱닷컴](http://www.homejjang.com/03/Tag_element_attribute.php "홈짱닷컴")
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+    int i;
+    srand(time(NULL));
+    for(i = 1; i<= 10; i++){
+        printf("%2d: %d\n", i, rand()%6+1);
+    }
+    return 0;
+}
+```
+_# 출력값1_
+```c
+ 1: 4
+ 2: 5
+ 3: 3
+ 4: 1
+ 5: 4
+ 6: 6
+ 7: 4
+ 8: 4
+ 9: 3
+10: 5
+```
+_# 출력값2_
+```c
+ 1: 1
+ 2: 3
+ 3: 3
+ 4: 2
+ 5: 6
+ 6: 1
+ 7: 4
+ 8: 6
+ 9: 3
+10: 5
+```
+
+이처럼, 매번 다른 값으로 출력이 됩니다.
+
+<br/><br/> <br/><br/>
+
+3. 실수형 난수의 생성 <br/>
+함수 rand 는 int형 함수 <br/>
+0 이상 32767(RAND_MAX)이하의 정수 난수를 생성. <br/>
+0이상 1이하의 실수 난수를 생성해야 한다면 RAND_MAX를 이용하여 나눗셈 연산으로 처리. <br/>
+
+
+0 <= rand() <= 32767  👉   0 <= rand()/RAND_MAX <= 1
+
+> RAND_MAX도 정수형이므로 실제 프로그램에서는 cast 연산자를 이용하여 명시적 형변환을 사용해야 함.
+
+_# 예시_
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+    int i;
+    double rnd;
+    srand(time(NULL));
+    for(i =1; i<= 5; i++){
+        rnd = rand()/(double)RAND_MAX;
+        printf("%6.4f\n", rnd);
+    }
+    return 0;
+}
+```
+
+<br/> <br/>
+
+_# 난수발생_
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+    int x, y, answer, i;
+    srand(time(NULL));
+
+    for(i = 0; i < 10; i++){
+        x = rand()%10;
+        y = rand()%10;
+        printf("%d + %d =", x, y);
+        scanf("%d", &answer);
+        if(x + y == answer){
+            printf("correct!\n");
+        }
+        else {
+            printf("no.......\n");
+        }
+        return 0;
+    }
+}
+```
+
+<br/><br/>
+
+
+## 🌊 __도전문제__ 
+
+- 위의 프로그램이 게임이 되려면 난수를 발생시키는 것이 좋다. 난수는 (rand()%100)으로 발생이 가능하다. stdlib.h 헤더 파일도 포함시켜야 한다.
+
+​
+
+```c
+// number game
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+    srand(time(NULL));
+    int answer = (rand()%100 + 1);
+    int guess;
+    int tries = 0;
+    do {
+        printf("number? ");
+        scanf("%d", &guess);
+        tries++;
+        if(guess > answer)
+            printf("down\n");
+        if(guess < answer)
+            printf("up\n");
+    } while (guess != answer);
+    printf("correct! tries: %d\n", tries);
+    return 0;
+}
+```
+_# 출력값_
+```c
+number? 50
+down
+number? 25
+up
+number? 46
+down
+number? 36
+down
+number? 29
+correct! tries: 5
+```
+
+<br/><br/>
+<br/><br/>
+
+
+**이 글의 `원문`으로!👇**
+
+[_원문_](https://blog.naver.com/friendlilo/222316107898, "네이버블로그") 
 
 
 ```toc
