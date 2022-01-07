@@ -14,7 +14,9 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-theme-material-ui`,
     `gatsby-transformer-sharp`,
-    {
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify`,    
+{
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
