@@ -18,7 +18,7 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['자유로운', '소통이 원활한', '능동적으로 일하는'],
-      thumbnail: '', // Path to the image in the 'asset' folder
+      thumbnail: 'sample.gif', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/yangwonhee`, 

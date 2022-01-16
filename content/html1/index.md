@@ -1,6 +1,6 @@
 ---
-emoji: 🔮
-title: html의 기본
+emoji: 🐳
+title: 🌊 html의 기본
 date: '2022-01-03 21:00:00'
 author: 코린이
 tags: html html문법 html기본
