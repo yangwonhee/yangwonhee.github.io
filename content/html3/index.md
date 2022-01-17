@@ -19,14 +19,14 @@ categories: python
 ## ⌨️ mac 단축키 : `command` + `k` + `s` 
 윈도우 단축키 : `control` + `k` + `s`
 
-![picture1.png](pic1.png)
+![pic1.png](pic1.png)
 
 위와 같이 keyboard shortcuts가 뜨는데, vscode의 단축키를 설정할 수 있는 창이다.
 <br/><br/>
 
 ## ⌨️ Type to search in keybindings 칸에 `python: run python file in terminal` 을 검색한다.
 
-![picture2](pic2.png)
+![pic2.png](pic2.png)
 
 위와 같이 검색이 되는데, 일치하는 검색어(파란 글씨)를 클릭하면 글자 왼쪽에 연필모양의 버튼이 뜬다. 
 
@@ -36,7 +36,7 @@ categories: python
 
 ## ⌨️ 원하는 단축키로 설정 (최대한 다른 키와 겹치지 않도록)
 
-![picture3](pic3.png)
+![pic3.png](pic3.png)
 
 연필모양의 버튼을 누르면 위 사진과 같이, keybinding을 입력하는 칸이 나온다. 이때 본인이 사용하기 편한 단축키를 입력해서 사용하면 된다. 
 
