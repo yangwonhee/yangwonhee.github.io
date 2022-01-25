@@ -1,3 +1,9 @@
+// const metaSEO = document.createElement('meta');
+// metaSEO.name = 'google-site-verification';
+// metaSEO.content = "SafUGOxKvLNVJ7esGNGQtN6SD4aVR98RVPEI5pMFYjE";
+// document.getElementsByTagName('head')[0].appendChild(metaSEO);
+
+
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
