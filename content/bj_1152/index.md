@@ -1,6 +1,6 @@
 ---
 emoji: ✨
-title: 백준 1152번 알파벳 찾기 / python, 파이썬
+title: 백준 1152번 단어의 개수 / python, 파이썬
 date: '2022-01-29 00:20:00'
 author: 코린이
 tags: 파이썬 python baekjoon 백준 1152번

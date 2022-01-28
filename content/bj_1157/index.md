@@ -1,6 +1,6 @@
 ---
 emoji: ✨
-title: 백준 1157번 알파벳 찾기 / python, 파이썬
+title: 백준 1157번 단어 공부 / python, 파이썬
 date: '2022-01-28 23:30:00'
 author: 코린이
 tags: 파이썬 python baekjoon 백준 1157번

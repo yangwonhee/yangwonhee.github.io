@@ -1,6 +1,6 @@
 ---
 emoji: ✨
-title: 백준 2675번 알파벳 찾기 / python, 파이썬
+title: 백준 2675번 문자열 반복 / python, 파이썬
 date: '2022-01-28 17:30:00'
 author: 코린이
 tags: 파이썬 python baekjoon 백준 2675번
