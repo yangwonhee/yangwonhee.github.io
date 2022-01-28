@@ -1,7 +1,7 @@
 ---
 emoji: ✨
-title: [파이썬] 백준 10809번 알파벳 찾기
-date: '2022-01-28 18:30:00'
+title: 백준 10809번 알파벳 찾기
+date: '2022-01-28 15:30:00'
 author: 코린이
 tags: 파이썬 python baekjoon 백준 10809번
 categories: PYTHON
