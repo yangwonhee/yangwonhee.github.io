@@ -48,7 +48,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby clean && gatsby build",
+    "build": "gatsby clean && gatsby build && gatsby serve",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "copy": "cp google383a9b5a235f13d3.html public/ && cp naver8bdb0b1d5dfd23d2ceb5b3c5b63a504e.html public/",

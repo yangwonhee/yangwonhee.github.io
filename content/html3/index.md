@@ -4,7 +4,7 @@ title: 🌕 vscode terminal에서 python 실행 단축키 설정
 date: '2022-01-10 21:00:00'
 author: 코린이
 tags: python vscode terminal 단축키설정
-categories: python
+categories: PYTHON
 ---
 
 
