@@ -72,15 +72,27 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        title: '진행 중  ...',
+        title: 'this blog!',
         description:
-          '개인 프로젝트를 작게 진행하고 있습니다. 이 곳에 차곡차곡 쌓아가려고 합니다.',
+          '본 블로그를 통해 웹의 기본적인 구조에 대해 배울 수 있었습니다.',
         techStack: ['html', 'css', 'react'],
         thumbnailUrl: 'blog.png',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
+          post: '/about',
           github: 'https://github.com/yangwonhee',
           demo: 'https://yangwonhee.github.io',
+        },
+      },
+      {
+        title: '그림판 만들기',
+        description:
+          '🖤 다크모드 가능 🎨 그림 저장 가능 🖌 여러 색상 선택 가능 👩‍🎨 색 채우기 가능 🖍 펜 굵기 선택 가능 🍇 이름 입력 후 사용하는 기능 구현',
+        techStack: ['html', 'css', 'js'],
+        thumbnailUrl: 'minipro1.png',
+        links: {
+          post: '/',
+          github: 'https://github.com/yangwonhee/paintingPage',
+          demo: 'https://yangwonhee.github.io/paintingPage/',
         },
       },
     ],
