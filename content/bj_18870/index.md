@@ -1,7 +1,7 @@
 ---
 emoji: ✨
-title: 백준 18870번 단어의 개수 / python, 파이썬
-date: '2022-02-12 19:20:00'
+title: 백준 18870번 좌표 압축 / python, 파이썬
+date: '2022-02-12 19:00:00'
 author: 코린이
 tags: 파이썬 python baekjoon 백준 18870번
 categories: PYTHON
