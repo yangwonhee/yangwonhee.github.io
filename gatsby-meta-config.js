@@ -13,7 +13,7 @@ module.exports = {
   author: {
     name: `양원희`,
     bio: {
-      role: `데이터분석가`,
+      role: `ML/AI 연구원`,
       description: ['적응력이 뛰어난', '도전적인', '문제해결능력을 갖춘'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
@@ -44,7 +44,7 @@ module.exports = {
       // ========================================================
       {
         date: '2018.03 ~ 2020.02',
-        activity: '용인대학교 생명과학과 중퇴',
+        activity: '용인대학교 생명과학과',
         links: {
           // post: '/gatsby-starter-zoomkoding-introduction',
           // github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
@@ -56,7 +56,7 @@ module.exports = {
       
       {
         date: '2020.03 ~ 2023.02',
-        activity: '단국대학교 사범대학 과학교육과(복수전공: SW융합학부 SW바이오융합학과) 졸업',
+        activity: '단국대학교 사범대학 과학교육과, SW융합학부 SW바이오융합학과',
         links: {
           // post: '/gatsby-starter-zoomkoding-introduction',
           // github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
@@ -85,8 +85,8 @@ module.exports = {
       },
 
       {
-        date: '2023.03 ~ (2024.08)',
-        activity: '단국대학교 일반대학원 인공지능융합학과 졸업',
+        date: '2023.03 ~ 2024.08',
+        activity: '단국대학교 일반대학원 인공지능융합학과',
         links: {
           // post: '/gatsby-starter-zoomkoding-introduction',
           // github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
@@ -115,10 +115,10 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        title: 'Integrative analysis of ulcerative colitis progression using single-cell RNA-seq and microbiome',
+        title: 'Integrative analysis of single-cell RNA-seq and gut microbiome metabarcoding data elucidates macrophage dysfunction in mice with DSS-induced ulcerative colitis',
         description:
-          '',
-        techStack: ['Ulcerative Colitis', 'scRNA-seq', 'microbiome', 'Data analysis', 'Data visualization'],
+          'Communication Biology, Nature | 2024.06.15',
+        techStack: ['Ulcerative Colitis', 'scRNA-seq', 'Microbiome', 'Data analysis', 'Data visualization'],
         thumbnailUrl: 'blog-proj1.png',
         links: {
           post: 'https://www.nature.com/articles/s42003-024-06409-w',
@@ -133,7 +133,7 @@ module.exports = {
         techStack: ['Machine learning', 'Algorithms', 'Classification', 'scRNA-seq'],
         thumbnailUrl: 'blog-proj2.png',
         links: {
-          // post: '/gatsby-starter-zoomkoding-introduction',
+          post: '/paper_graduation',
           // github: 'https://github.com/combio-dku',
           // demo: 'https://www.zoomkoding.com',
         },
@@ -141,7 +141,7 @@ module.exports = {
       {
         title: 'A Retrospective View of the Triple-Negative Breast Cancer Microenvironment: Novel Markers, Interactions, and Mechanisms of Tumor-Associated Components Using Public Single-Cell RNA-Seq Datasets',
         description:
-          '',
+          'MDPI, Cancers | 2024.03.16',
         techStack: ['Breast Cancer', 'Tumor Microenvironment', 'scRNA-seq', 'Data analysis', 'Data visualization'],
         thumbnailUrl: 'blog-proj3.png',
         links: {
