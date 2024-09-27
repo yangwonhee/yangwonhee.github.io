@@ -287,6 +287,10 @@
   font-size: 12px;
 }
 
+.markdown em {
+  font-style: italic;
+}
+
 .markdown code.language-text {
   border-radius: 3px;
   font-size: 85%;
