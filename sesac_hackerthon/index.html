@@ -1,0 +1,751 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.25.7"/><meta data-react-helmet="true" property="og:title" content="새싹해커톤 대상 후기"/><meta data-react-helmet="true" property="og:site_title" content="새싹해커톤 대상 후기"/><meta data-react-helmet="true" name="description" content="대회 끝나자마자 쓰고 싶었는데, 이런저런 일들로 .. 이제야 올립니다.
+아! 물롱 대회랑 상관 없는 일임. 시작하깨효 ..? (사담 가득 주의) 🌏 팀 구성 2024년 6월 쯔음 .. 졸업논문을 마무리하고 여유가 생겨서 그동안 참여해보고 싶었던 해커톤을 찾아보게 되었다. 그동안 눈팅만 해오던 데이콘에서 새싹해커톤을 보고 일단 팀 빌딩을 지원해주는 운영사무국의 오픈채팅방에 들어갔다. 참가할지 말지 고민하던 중, 하린님(PM)의 아이디어를 보고 너무 좋은 나머지 무작정 팀에 들어가게 되었다.
+
+
+ 많은 아이디어 중, 하린님의 아이디어를 채택한 (내가뭐라고) 이유는 이 주제였는데 여기에 너무 찰떡인 아이디어 이면서, PM이 개발 쪽에 대해 모른다면 제한 없이 무궁무진한 아이디어를 잘 낼 수 있지 않을까? 라는 생각이 들었기 때문이다. (+ 열정가득한멘트) 모든 개발자들이 그런건 아니지만, 나는 아이디어를 생각하다보면 &lt;어떤 기술을 쓸지, 이게 구현 가능할지&gt; 부터 생각하게 되는 것 같다…"/><meta data-react-helmet="true" property="og:description" content="대회 끝나자마자 쓰고 싶었는데, 이런저런 일들로 .. 이제야 올립니다.
+아! 물롱 대회랑 상관 없는 일임. 시작하깨효 ..? (사담 가득 주의) 🌏 팀 구성 2024년 6월 쯔음 .. 졸업논문을 마무리하고 여유가 생겨서 그동안 참여해보고 싶었던 해커톤을 찾아보게 되었다. 그동안 눈팅만 해오던 데이콘에서 새싹해커톤을 보고 일단 팀 빌딩을 지원해주는 운영사무국의 오픈채팅방에 들어갔다. 참가할지 말지 고민하던 중, 하린님(PM)의 아이디어를 보고 너무 좋은 나머지 무작정 팀에 들어가게 되었다.
+
+
+ 많은 아이디어 중, 하린님의 아이디어를 채택한 (내가뭐라고) 이유는 이 주제였는데 여기에 너무 찰떡인 아이디어 이면서, PM이 개발 쪽에 대해 모른다면 제한 없이 무궁무진한 아이디어를 잘 낼 수 있지 않을까? 라는 생각이 들었기 때문이다. (+ 열정가득한멘트) 모든 개발자들이 그런건 아니지만, 나는 아이디어를 생각하다보면 &lt;어떤 기술을 쓸지, 이게 구현 가능할지&gt; 부터 생각하게 되는 것 같다…"/><meta data-react-helmet="true" property="og:author" content="양원희"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><style data-href="/styles.4efb0a9e2466cd5f3585.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}.search-input-wrapper{align-items:center;display:none;margin-top:3px;width:180px}@media(min-width:768px){.search-input-wrapper{display:flex}}.search-icon{color:var(--primary-text-color);margin-right:2px}.search-input{height:100%;width:100%}.search-input .MuiAutocomplete-inputRoot{padding-right:0!important}.search-input .MuiInputBase-input{color:var(--primary-text-color)!important;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;padding-bottom:2px!important}.search-input .MuiInput-underline:before{border-bottom-color:var(--primary-text-color);border-bottom-width:1px}.search-input .MuiInput-underline:after{border-bottom-color:var(--primary-text-color)}.page-header-wrapper{display:flex;height:60px;justify-content:center;width:100%}.page-header-wrapper .page-header{align-items:center;display:flex;justify-content:space-between;max-width:720px;width:100%}.page-header-wrapper .page-header .link{color:var(--primary-text-color);font-size:17px;font-weight:700}@media(min-width:768px){.page-header-wrapper .page-header .link{font-size:20px;font-weight:700}}.page-header-wrapper .page-header .trailing-section{align-items:center;display:flex}.page-header-wrapper .page-header .trailing-section .link{margin-right:10px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .link{margin-right:20px}}.page-footer-wrapper{align-items:center;display:flex;height:62px;justify-content:center;margin-top:auto;width:100%}.page-footer-wrapper .page-footer{max-width:720px;text-align:center;width:100%}.page-footer-wrapper .page-footer .link{color:var(--primary-text-color);font-size:20px;font-weight:700;margin-right:20px}.page-footer-wrapper .page-footer a{color:#3a95ff}.dark-mode-button-wrapper{align-items:center;bottom:20px;display:flex;justify-content:center;position:fixed;right:20px}.dark-mode-button{-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);background-color:#363f47!important;border-radius:50px;box-shadow:0 5px 25px rgba(0,0,0,.12);cursor:pointer;height:50px;width:50px;z-index:3}.dark-mode-icon{color:#fff}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}a{outline:none;text-decoration:none}html{--background-color:#fff;--primary-text-color:#000;--secondary-text-color:#9e9e9e;--content-text-color:#37352f;--button-background-color:#f3f3f4;--button-text-color:#363f47;--tab-text-color:#6e6d7a;--tab-hover-text-color:#0d0c22;--tab-selected-background-color:rgba(13,12,34,.05);--bio-link-icon-color:rgba(0,0,0,.54);--about-link-icon-color:#a8a8a8;--chip-background-color:#f3f3f4;--link-text-color:rgba(55,53,47,.7);--post-card-border-color:rgba(0,0,0,.12);--markdown-table-even-cell-background-color:#f6f8fa;--markdown-table-border-color:#dfe2e5;--markdown-blockquote-border-color:#dfe2e5;--markdown-border-color:#e1e4e8}html[data-theme=dark]{--background-color:#232326;--primary-text-color:#e6e6e6;--secondary-text-color:#768390;--content-text-color:#e6e6e6;--button-background-color:#444c56;--button-text-color:#363f47;--tab-text-color:#768390;--tab-hover-text-color:#acbac7;--tab-selected-background-color:#373e47;--chip-background-color:#323a42;--bio-link-icon-color:#e6e6e6;--about-link-icon-color:#a8a8a8;--link-text-color:#90b0ec;--post-card-border-color:#363f47;--markdown-table-even-cell-background-color:#2d333b;--markdown-table-border-color:#444c56;--markdown-blockquote-border-color:#4f5864;--markdown-border-color:#e1e4e8}*{-webkit-appearance:none;appearance:none;box-sizing:border-box}html{font-size:14px;height:100%;overflow-y:scroll;width:100%}body{background-color:var(--background-color)!important}a{color:var(--link-text-color)}.page-wrapper{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:var(--primary-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;justify-content:center;min-height:100vh;padding-left:15px;padding-right:15px;word-break:keep-all}.page-wrapper,.page-wrapper .page-content{align-items:center;display:flex;flex-direction:column;width:100%}.page-wrapper .page-content{max-width:720px}.icon{color:var(--about-link-icon-color);font-size:20px}.social-links .icon{color:var(--bio-link-icon-color);font-size:30px}@-webkit-keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}@keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}.bio{color:var(--primary-text-color);display:flex;flex-direction:column;justify-content:space-between;margin-bottom:120px;margin-top:120px;width:100%}@media(min-width:768px){.bio{align-items:center;flex-direction:row}}.bio .introduction{display:flex;flex-direction:column;word-break:keep-all}.bio .introduction .react-rotating-text-cursor{-webkit-animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite;animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite}.bio .introduction strong{display:inline-block;font-weight:600}.bio .introduction.korean{font-size:32px;font-weight:100;line-height:1.2}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:35px;line-height:35px}@media(min-width:768px){.bio .introduction.korean{font-size:40px}.bio .introduction.korean .title .react-rotating-text-cursor{font-size:45px;line-height:45px}}.bio .introduction.english{font-family:montserrat;font-size:25px;line-height:1.2}@media(min-width:768px){.bio .introduction.english{font-size:45px}}.bio .introduction.english .name{font-size:35px;font-weight:600}.bio .introduction.english .job{font-size:35px}.bio .introduction.english .description{font-size:20px;font-weight:200;margin-top:8px}.bio .introduction.english .social-links{display:flex;margin-top:20px}.bio .thumbnail-wrapper{display:none}@media(min-width:768px){.bio .thumbnail-wrapper{display:block}}.section-header-wrapper{display:flex;justify-content:center;margin-bottom:32px;width:100%}.section-header-wrapper .section-header{border-bottom:4px solid var(--primary-text-color);color:var(--primary-text-color);font-size:30px;font-weight:700;padding-bottom:5px}.timestamp-section{align-items:center;display:flex;flex-direction:column;justify-content:center;margin-bottom:50px;width:100%;word-break:keep-all}.timestamp-section .body{padding:0 10px;width:100%}.timestamp-section .body .timestamp{border-left:2px solid #bdbdbd;display:flex;font-size:18px;font-weight:400;justify-items:center;margin-left:5px;padding:10px 0;width:100%}.timestamp-section .body .timestamp:first-child{padding-top:7px}.timestamp-section .body .timestamp:last-child{padding-bottom:7px}.timestamp-section .body .timestamp:before{align-self:center;background-color:var(--background-color);border:2px solid #828282;border-radius:10px;content:"";height:10px;left:-1px;position:relative;-webkit-transform:translatex(-50%);transform:translatex(-50%);width:10px}.timestamp-section .body .timestamp .date{align-self:center;color:#828282;margin-left:5px;margin-right:5px;min-width:115px;width:115px}@media(min-width:768px){.timestamp-section .body .timestamp .date{min-width:200px;width:200px}}.timestamp-section .body .timestamp .activity{line-height:23px;width:100%}.project-section{align-items:center;justify-content:center}.project-section,.project-section .project{display:flex;flex-direction:column;width:100%}.project-section .project{margin-bottom:30px;padding:15px}.project-section .project .head{font-size:20px;font-weight:700;line-height:30px;margin-bottom:10px}.project-section .project .body{display:flex;flex-direction:column;width:100%}.project-section .project .body .thumbnail{margin-bottom:10px;width:100%}.project-section .project .body .tech-stack{display:flex;margin-bottom:10px}.project-section .project .body .tech-stack .tech{background-color:var(--chip-background-color);border-radius:10px;font-size:15px;font-weight:500;margin-right:5px;padding:5px 7px}.project-section .project .body .description{font-size:16px;font-weight:400;line-height:1.4}@media(min-width:768px){.project-section .project .body{flex-direction:column}.project-section .project .body .content{margin-top:0}}.post-header{border-bottom:1px solid var(--post-card-border-color);display:flex;flex-direction:column;justify-content:center;margin-bottom:40px;margin-top:20px;padding-bottom:10px;width:100%;word-break:keep-all}.post-header .emoji{font-size:78px;margin-bottom:20px}.post-header .categories{margin-bottom:5px}.post-header .categories .category{color:var(--primary-text-color);font-weight:600;margin-right:4px}.post-header .categories .category:hover{text-decoration:underline}.post-header .title{color:var(--primary-text-color);font-size:32px;font-weight:600;line-height:1.3;margin-bottom:6px}.post-header .info{color:var(--secondary-text-color);display:flex;flex-wrap:wrap;font-size:16px;font-weight:500;line-height:1.5;width:100%}.post-header .info .author{margin-right:4px}.post-header .info strong{color:var(--primary-text-color);font-weight:600}.post-navigator{-webkit-column-gap:1.4%;column-gap:1.4%;display:grid;grid-template-columns:49.3% 49.3%;width:100%}.post-navigator .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;padding:15px;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s;width:100%}.post-navigator .post-card:hover .title{text-decoration:underline}.post-navigator .post-card.prev{margin-right:auto}.post-navigator .post-card.next{margin-left:auto}.post-navigator .post-card .direction{color:gray;font-size:14px;font-weight:500;margin-bottom:5px}.post-navigator .post-card .title{font-size:16px;font-weight:600;line-height:1.4;margin-bottom:7px}.markdown .octicon{fill:currentColor;display:inline-block;vertical-align:text-bottom}.markdown .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown .anchor:focus{outline:none}.markdown h1 .octicon-link,.markdown h2 .octicon-link,.markdown h3 .octicon-link,.markdown h4 .octicon-link,.markdown h5 .octicon-link,.markdown h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown h1:hover .anchor,.markdown h2:hover .anchor,.markdown h3:hover .anchor,.markdown h4:hover .anchor,.markdown h5:hover .anchor,.markdown h6:hover .anchor{text-decoration:none}.markdown h1:hover .anchor .octicon-link,.markdown h2:hover .anchor .octicon-link,.markdown h3:hover .anchor .octicon-link,.markdown h4:hover .anchor .octicon-link,.markdown h5:hover .anchor .octicon-link,.markdown h6:hover .anchor .octicon-link{visibility:visible}.markdown h1:hover .anchor .octicon-link:before,.markdown h2:hover .anchor .octicon-link:before,.markdown h3:hover .anchor .octicon-link:before,.markdown h4:hover .anchor .octicon-link:before,.markdown h5:hover .anchor .octicon-link:before,.markdown h6:hover .anchor .octicon-link:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' aria-hidden='true' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E");content:" ";display:inline-block;height:16px;width:16px}.markdown{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-wrap:break-word;color:var(--content-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;line-height:1.5}.markdown details{display:block}.markdown summary{display:list-item}.markdown a{background-color:initial}.markdown a:active,.markdown a:hover{outline-width:0}.markdown strong{font-weight:inherit;font-weight:bolder}.markdown h1{margin:.67em 0}.markdown img{border-style:none}.markdown code,.markdown kbd,.markdown pre{font-family:monospace,monospace;font-size:1em}.markdown hr{box-sizing:initial;overflow:visible}.markdown input{font:inherit;margin:0;overflow:visible}.markdown [type=checkbox]{box-sizing:border-box;padding:0}.markdown *{box-sizing:border-box}.markdown input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown a{border-bottom:.05em solid;border-color:var(--link-text-color);color:var(--link-text-color);text-decoration:none}.markdown a.anchor{border-bottom:none}.markdown strong{font-weight:700}.markdown hr{background:transparent;border-bottom:1px solid var(--markdown-blockquote-border-color);height:0;margin:15px 0;overflow:hidden}.markdown hr:after,.markdown hr:before{content:"";display:table}.markdown hr:after{clear:both}.markdown table{border-collapse:collapse;border-spacing:0}.markdown td,.markdown th{padding:0}.markdown details summary{cursor:pointer}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-bottom:0;margin-top:0}.markdown h1{font-size:32px}.markdown h1,.markdown h2{font-weight:600}.markdown h2{font-size:24px}.markdown h3{font-size:20px}.markdown h3,.markdown h4{font-weight:600}.markdown h4{font-size:16px}.markdown h5{font-size:14px}.markdown h5,.markdown h6{font-weight:600}.markdown h6{font-size:12px}.markdown p{margin-bottom:10px;margin-top:0}.markdown blockquote{margin:0}.markdown ol,.markdown ul{margin-bottom:0;margin-top:0;padding-left:0}.markdown ol ol,.markdown ul ol{list-style-type:lower-roman}.markdown ol ol ol,.markdown ol ul ol,.markdown ul ol ol,.markdown ul ul ol{list-style-type:lower-alpha}.markdown dd{margin-left:0}.markdown code,.markdown pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown em{font-style:italic}.markdown code.language-text{border-radius:3px;font-size:85%;padding:.2em .4em}.markdown :not(pre)>code.language-text{background:hsla(44,6%,50%,.15);color:#eb5757;overflow-wrap:break-word}.markdown pre{margin-bottom:0;margin-top:0}.markdown input::-webkit-inner-spin-button,.markdown input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.markdown :checked+.radio-label{border-color:#0366d6;position:relative;z-index:1}.markdown .border{border:1px solid var(--markdown-border-color)!important}.markdown .border-0{border:0!important}.markdown .border-bottom{border-bottom:1px solid var(--markdown-border-color)!important}.markdown .rounded-1{border-radius:3px!important}.markdown .bg-white{background-color:transparent!important}.markdown .bg-gray-light{background-color:#fafbfc!important}.markdown .text-gray-light{color:#6a737d!important}.markdown .pl-3,.markdown .px-3{padding-left:16px!important}.markdown .px-3{padding-right:16px!important}.markdown .f6{font-size:12px!important}.markdown .lh-condensed{line-height:1.25!important}.markdown .text-bold{font-weight:600!important}.markdown .pl-c{color:#6a737d}.markdown .pl-c1,.markdown .pl-s .pl-v{color:#005cc5}.markdown .pl-e,.markdown .pl-en{color:#6f42c1}.markdown .pl-s .pl-s1,.markdown .pl-smi{color:#24292e}.markdown .pl-ent{color:#22863a}.markdown .pl-k{color:#d73a49}.markdown .pl-pds,.markdown .pl-s,.markdown .pl-s .pl-pse .pl-s1,.markdown .pl-sr,.markdown .pl-sr .pl-cce,.markdown .pl-sr .pl-sra,.markdown .pl-sr .pl-sre{color:#032f62}.markdown .pl-smw,.markdown .pl-v{color:#e36209}.markdown .pl-bu{color:#b31d28}.markdown .pl-ii{background-color:#b31d28;color:#fafbfc}.markdown .pl-c2{background-color:#d73a49;color:#fafbfc}.markdown .pl-c2:before{content:"^M"}.markdown .pl-sr .pl-cce{color:#22863a;font-weight:700}.markdown .pl-ml{color:#735c0f}.markdown .pl-mh,.markdown .pl-mh .pl-en,.markdown .pl-ms{color:#005cc5;font-weight:700}.markdown .pl-mi{color:#24292e;font-style:italic}.markdown .pl-mb{color:#24292e;font-weight:700}.markdown .pl-md{background-color:#ffeef0;color:#b31d28}.markdown .pl-mi1{background-color:#f0fff4;color:#22863a}.markdown .pl-mc{background-color:#ffebda;color:#e36209}.markdown .pl-mi2{background-color:#005cc5;color:#f6f8fa}.markdown .pl-mdr{color:#6f42c1;font-weight:700}.markdown .pl-ba{color:#586069}.markdown .pl-sg{color:#959da5}.markdown .pl-corl{color:#032f62;text-decoration:underline}.markdown .mb-0{margin-bottom:0!important}.markdown .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown .pl-0{padding-left:0!important}.markdown .py-0{padding-bottom:0!important;padding-top:0!important}.markdown .pl-1{padding-left:4px!important}.markdown .pl-2{padding-left:8px!important}.markdown .py-2{padding-bottom:8px!important;padding-top:8px!important}.markdown .pl-3{padding-left:16px!important}.markdown .pl-4{padding-left:24px!important}.markdown .pl-5{padding-left:32px!important}.markdown .pl-6{padding-left:40px!important}.markdown .pl-7{padding-left:48px!important}.markdown .pl-8{padding-left:64px!important}.markdown .pl-9{padding-left:80px!important}.markdown .pl-10{padding-left:96px!important}.markdown .pl-11{padding-left:112px!important}.markdown .pl-12{padding-left:128px!important}.markdown hr{border-bottom-color:#eee}.markdown kbd{background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da;color:#444d56;display:inline-block;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown:after,.markdown:before{content:"";display:table}.markdown:after{clear:both}.markdown>:first-child{margin-top:0!important}.markdown>:last-child{margin-bottom:0!important}.markdown a:not([href]){color:inherit;text-decoration:none}.markdown blockquote,.markdown details,.markdown dl,.markdown ol,.markdown p,.markdown pre,.markdown table,.markdown ul{margin-bottom:16px;margin-top:0}.markdown hr{background-color:var(--markdown-border-color);border:0;height:.25em;margin:24px 0;padding:0}.markdown blockquote{border-left:.25em solid var(--markdown-blockquote-border-color);color:#6a737d;padding:0 1em}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown h1{font-size:2em}.markdown h2{font-size:1.5em}.markdown h3{font-size:1.25em}.markdown h4{font-size:1em}.markdown h5{font-size:.875em}.markdown h6{color:#6a737d;font-size:.85em}.markdown ol,.markdown ul{padding-left:2em}.markdown ol ol,.markdown ol ul,.markdown ul ol,.markdown ul ul{margin-bottom:0;margin-top:0}.markdown ol{list-style-type:decimal}.markdown ul{list-style-type:disc}.markdown li{word-wrap:break-all;display:list-item;text-align:-webkit-match-parent}.markdown li>p{margin-top:16px}.markdown li+li{margin-top:.25em}.markdown dl{padding:0}.markdown dl dt{font-size:1em;font-style:italic;font-weight:600;margin-top:16px;padding:0}.markdown dl dd{margin-bottom:16px;padding:0 16px}.markdown table{display:block;overflow:auto;width:100%}.markdown table th{font-weight:600}.markdown table td,.markdown table th{border:1px solid var(--markdown-table-border-color);padding:6px 13px}.markdown table tr{border-top:1px solid var(--markdown-table-border-color)}.markdown table tr:nth-child(2n){background-color:var(--markdown-table-even-cell-background-color)}.markdown img{background-color:transparent;box-sizing:initial;display:block;margin:0 auto;max-width:100%}.markdown img[align=right]{padding-left:20px}.markdown img[align=left]{padding-right:20px}.markdown code{background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;margin:0;padding:.2em .4em}.markdown pre{word-wrap:normal}.markdown pre>code{background:transparent;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown .highlight{margin-bottom:16px}.markdown .highlight pre{margin-bottom:0;word-break:normal}.markdown .highlight pre,.markdown pre{background-color:#f6f8fa;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}.markdown pre code{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown .commit-tease-sha{color:#444d56;display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%}.markdown .full-commit .btn-outline:not(:disabled):hover{border-color:#005cc5;color:#005cc5}.markdown .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown .blob-num{color:rgba(27,31,35,.3);cursor:pointer;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;min-width:50px;padding-left:10px;padding-right:10px;text-align:right;-webkit-user-select:none;user-select:none;vertical-align:top;white-space:nowrap;width:1%}.markdown .blob-num:hover{color:rgba(27,31,35,.6)}.markdown .blob-num:before{content:attr(data-line-number)}.markdown .blob-code{line-height:20px;padding-left:10px;padding-right:10px;position:relative;vertical-align:top}.markdown .blob-code-inner{word-wrap:normal;color:#24292e;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;overflow:visible;white-space:pre}.markdown .pl-token.active,.markdown .pl-token:hover{background:#ffea7f;cursor:pointer}.markdown .tab-size[data-tab-size="1"]{-o-tab-size:1;tab-size:1}.markdown .tab-size[data-tab-size="2"]{-o-tab-size:2;tab-size:2}.markdown .tab-size[data-tab-size="3"]{-o-tab-size:3;tab-size:3}.markdown .tab-size[data-tab-size="4"]{-o-tab-size:4;tab-size:4}.markdown .tab-size[data-tab-size="5"]{-o-tab-size:5;tab-size:5}.markdown .tab-size[data-tab-size="6"]{-o-tab-size:6;tab-size:6}.markdown .tab-size[data-tab-size="7"]{-o-tab-size:7;tab-size:7}.markdown .tab-size[data-tab-size="8"]{-o-tab-size:8;tab-size:8}.markdown .tab-size[data-tab-size="9"]{-o-tab-size:9;tab-size:9}.markdown .tab-size[data-tab-size="10"]{-o-tab-size:10;tab-size:10}.markdown .tab-size[data-tab-size="11"]{-o-tab-size:11;tab-size:11}.markdown .tab-size[data-tab-size="12"]{-o-tab-size:12;tab-size:12}.markdown .task-list-item{list-style-type:none}.markdown .task-list-item+.task-list-item{margin-top:3px}.markdown .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown .table-of-contents{align-items:flex-start;display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:75px;width:340px}@media(max-width:1300px){.markdown .table-of-contents{display:none}}.markdown .table-of-contents ul{cursor:pointer;list-style-type:none}.markdown .table-of-contents ul li a{border-bottom:none;color:var(--secondary-text-color);font-size:14px;height:30px;padding:6px 2px;width:100%}.markdown .table-of-contents ul p{margin:0}.markdown .gatsby-resp-image-wrapper{display:flex!important;justify-content:center!important;max-height:560px!important;width:100%!important}.markdown .gatsby-resp-image-wrapper img{height:auto!important;max-height:560px!important;max-width:100%!important;position:relative!important;width:auto!important}.markdown .gatsby-resp-image-wrapper+em{color:#6a737d;display:block;font-size:15px;font-style:italic;text-align:center}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}.post-content{margin-bottom:20px;width:100%}.category-page-header-wrapper,.post-content{display:flex;flex-direction:column;justify-content:center}.category-page-header-wrapper{align-items:center;margin-bottom:30px;margin-top:30px}.category-page-header-wrapper .category-page-title{border-bottom:3px solid var(--primary-text-color);font-size:40px;font-weight:700;margin-bottom:15px;padding-bottom:7px;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.category-page-header-wrapper .category-page-subtitle{font-size:20px;font-weight:500;padding-bottom:10px;text-align:center}.post-card-wrapper{display:flex;justify-content:center;min-height:150px;width:100%}.post-card-wrapper .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;height:100%;margin-bottom:15px;max-width:720px;padding:15px;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s;width:100%}.post-card-wrapper .post-card:hover .title{text-decoration:underline}@media(min-width:768px){.post-card-wrapper .post-card{margin-bottom:0}}.post-card-wrapper .post-card .title{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:7px}.post-card-wrapper .post-card .description{-webkit-line-clamp:3;-webkit-box-orient:vertical;color:var(--primary-text-color);display:-webkit-box;font-size:13px;line-height:20px;margin-bottom:10px;overflow:hidden;text-overflow:ellipsis}.post-card-wrapper .post-card .info{color:var(--about-link-icon-color);display:flex;font-size:14px;justify-content:space-between;margin-top:auto}.post-card-wrapper .post-card .info .categories{display:flex}.post-card-wrapper .post-card .info .categories .category{margin-left:4px}.post-card-wrapper .post-card .info .categories .category:hover{text-decoration:underline}.post-card-column-wrapper{display:flex;justify-content:center;width:100%}.post-card-column-wrapper .post-card-column{align-items:center;display:flex;flex-direction:column;width:100%}.post-card-column-wrapper .post-card-column .post-card-wrapper{margin-bottom:10px}.post-card-column-wrapper .post-card-column .more-post-card-button{background-color:var(--button-background-color);color:var(--tab-hover-text-color);font-size:15px;font-weight:500;height:40px}.post-tabs-wrapper{align-self:flex-start;display:flex;flex-direction:column;justify-content:center;top:0;width:100%}.post-tabs-wrapper .post-tabs{display:flex;height:40px;justify-content:center;margin-bottom:12px;max-width:760px;width:100%}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root{color:var(--tab-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:17px;font-weight:500;height:40px;min-height:auto;min-width:auto;padding:10px 12px;transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected,.post-tabs-wrapper .post-tabs .mui-tabs .MuiTab-root :hover{color:var(--tab-hover-text-color);transition:all .2s ease}.post-tabs-wrapper .post-tabs .mui-tabs .Mui-selected{background-color:var(--tab-selected-background-color);border-radius:8px;font-weight:600}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabScrollButton-root{height:40px;width:20px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-scrollable{height:40px}.post-tabs-wrapper .post-tabs .mui-tabs .MuiTabs-indicator{display:none}</style><style data-emotion="css-global o6gwfi">html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;box-sizing:border-box;-webkit-text-size-adjust:100%;}*,*::before,*::after{box-sizing:inherit;}strong,b{font-weight:700;}body{margin:0;color:rgba(0, 0, 0, 0.87);font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;background-color:#fff;}@media print{body{background-color:#fff;}}body::backdrop{background-color:#fff;}</style><style data-emotion="css-global 1prfaxn">@-webkit-keyframes mui-auto-fill{from{display:block;}}@keyframes mui-auto-fill{from{display:block;}}@-webkit-keyframes mui-auto-fill-cancel{from{display:block;}}@keyframes mui-auto-fill-cancel{from{display:block;}}</style><style data-emotion="css 18nc3u2 feqhe6 12rx5qu mnn31 vubbuv 1yxmbwk 6flbmm">.css-18nc3u2.Mui-focused .MuiAutocomplete-clearIndicator{visibility:visible;}@media (pointer: fine){.css-18nc3u2:hover .MuiAutocomplete-clearIndicator{visibility:visible;}}.css-18nc3u2 .MuiAutocomplete-tag{margin:3px;max-width:calc(100% - 6px);}.css-18nc3u2 .MuiAutocomplete-inputRoot{-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}.MuiAutocomplete-hasPopupIcon.css-18nc3u2 .MuiAutocomplete-inputRoot,.MuiAutocomplete-hasClearIcon.css-18nc3u2 .MuiAutocomplete-inputRoot{padding-right:30px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-18nc3u2 .MuiAutocomplete-inputRoot{padding-right:56px;}.css-18nc3u2 .MuiAutocomplete-inputRoot .MuiAutocomplete-input{width:0;min-width:30px;}.css-18nc3u2 .MuiInput-root{padding-bottom:1px;}.css-18nc3u2 .MuiInput-root .MuiInput-input{padding:4px 4px 4px 0px;}.css-18nc3u2 .MuiInput-root.MuiInputBase-sizeSmall .MuiInput-input{padding:2px 4px 3px 0;}.css-18nc3u2 .MuiOutlinedInput-root{padding:9px;}.MuiAutocomplete-hasPopupIcon.css-18nc3u2 .MuiOutlinedInput-root,.MuiAutocomplete-hasClearIcon.css-18nc3u2 .MuiOutlinedInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-18nc3u2 .MuiOutlinedInput-root{padding-right:65px;}.css-18nc3u2 .MuiOutlinedInput-root .MuiAutocomplete-input{padding:7.5px 4px 7.5px 5px;}.css-18nc3u2 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-18nc3u2 .MuiOutlinedInput-root.MuiInputBase-sizeSmall{padding-top:6px;padding-bottom:6px;padding-left:6px;}.css-18nc3u2 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input{padding:2.5px 4px 2.5px 8px;}.css-18nc3u2 .MuiFilledInput-root{padding-top:19px;padding-left:8px;}.MuiAutocomplete-hasPopupIcon.css-18nc3u2 .MuiFilledInput-root,.MuiAutocomplete-hasClearIcon.css-18nc3u2 .MuiFilledInput-root{padding-right:39px;}.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-18nc3u2 .MuiFilledInput-root{padding-right:65px;}.css-18nc3u2 .MuiFilledInput-root .MuiFilledInput-input{padding:7px 4px;}.css-18nc3u2 .MuiFilledInput-root .MuiAutocomplete-endAdornment{right:9px;}.css-18nc3u2 .MuiFilledInput-root.MuiInputBase-sizeSmall{padding-bottom:1px;}.css-18nc3u2 .MuiFilledInput-root.MuiInputBase-sizeSmall .MuiFilledInput-input{padding:2.5px 4px;}.css-18nc3u2 .MuiInputBase-hiddenLabel{padding-top:8px;}.css-18nc3u2 .MuiFilledInput-root.MuiInputBase-hiddenLabel{padding-top:0;padding-bottom:0;}.css-18nc3u2 .MuiFilledInput-root.MuiInputBase-hiddenLabel .MuiAutocomplete-input{padding-top:16px;padding-bottom:17px;}.css-18nc3u2 .MuiFilledInput-root.MuiInputBase-hiddenLabel.MuiInputBase-sizeSmall .MuiAutocomplete-input{padding-top:8px;padding-bottom:9px;}.css-18nc3u2 .MuiAutocomplete-input{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;text-overflow:ellipsis;opacity:1;}.css-feqhe6{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;min-width:0;padding:0;margin:0;border:0;vertical-align:top;width:100%;}.css-12rx5qu{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.4375em;letter-spacing:0.00938em;color:rgba(0, 0, 0, 0.87);box-sizing:border-box;position:relative;cursor:text;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;position:relative;}.css-12rx5qu.Mui-disabled{color:rgba(0, 0, 0, 0.38);cursor:default;}label+.css-12rx5qu{margin-top:16px;}.css-12rx5qu:after{border-bottom:2px solid #1976d2;left:0;bottom:0;content:"";position:absolute;right:0;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;transition:transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;pointer-events:none;}.css-12rx5qu.Mui-focused:after{-webkit-transform:scaleX(1) translateX(0);-moz-transform:scaleX(1) translateX(0);-ms-transform:scaleX(1) translateX(0);transform:scaleX(1) translateX(0);}.css-12rx5qu.Mui-error:before,.css-12rx5qu.Mui-error:after{border-bottom-color:#d32f2f;}.css-12rx5qu:before{border-bottom:1px solid rgba(0, 0, 0, 0.42);left:0;bottom:0;content:"\00a0";position:absolute;right:0;-webkit-transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;pointer-events:none;}.css-12rx5qu:hover:not(.Mui-disabled, .Mui-error):before{border-bottom:2px solid rgba(0, 0, 0, 0.87);}@media (hover: none){.css-12rx5qu:hover:not(.Mui-disabled, .Mui-error):before{border-bottom:1px solid rgba(0, 0, 0, 0.42);}}.css-12rx5qu.Mui-disabled:before{border-bottom-style:dotted;}.css-mnn31{font:inherit;letter-spacing:inherit;color:currentColor;padding:4px 0 5px;border:0;box-sizing:content-box;background:none;height:1.4375em;margin:0;-webkit-tap-highlight-color:transparent;display:block;min-width:0;width:100%;-webkit-animation-name:mui-auto-fill-cancel;animation-name:mui-auto-fill-cancel;-webkit-animation-duration:10ms;animation-duration:10ms;}.css-mnn31::-webkit-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-moz-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31::-ms-input-placeholder{color:currentColor;opacity:0.42;-webkit-transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-mnn31:focus{outline:0;}.css-mnn31:invalid{box-shadow:none;}.css-mnn31::-webkit-search-decoration{-webkit-appearance:none;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-webkit-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-moz-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31::-ms-input-placeholder{opacity:0!important;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-webkit-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-moz-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus:-ms-input-placeholder{opacity:0.42;}label[data-shrink=false]+.MuiInputBase-formControl .css-mnn31:focus::-ms-input-placeholder{opacity:0.42;}.css-mnn31.Mui-disabled{opacity:1;-webkit-text-fill-color:rgba(0, 0, 0, 0.38);}.css-mnn31:-webkit-autofill{-webkit-animation-duration:5000s;animation-duration:5000s;-webkit-animation-name:mui-auto-fill;animation-name:mui-auto-fill;}.css-vubbuv{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;}.css-1yxmbwk{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;overflow:visible;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}.css-1yxmbwk::-moz-focus-inner{border-style:none;}.css-1yxmbwk.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1yxmbwk{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1yxmbwk:hover{background-color:rgba(0, 0, 0, 0.04);}@media (hover: none){.css-1yxmbwk:hover{background-color:transparent;}}.css-1yxmbwk.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}.css-6flbmm{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:2.1875rem;}</style><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='0',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', '0', 'auto', {});
+      ga('set', 'anonymizeIp', true);
+      
+      
+      
+      
+      }</script><link rel="icon" href="/favicon-32x32.png?v=7f9c26cfbb95111b9508dcb5c9a0b4c2" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=7f9c26cfbb95111b9508dcb5c9a0b4c2"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=7f9c26cfbb95111b9508dcb5c9a0b4c2"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=7f9c26cfbb95111b9508dcb5c9a0b4c2"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=7f9c26cfbb95111b9508dcb5c9a0b4c2"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=7f9c26cfbb95111b9508dcb5c9a0b4c2"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=7f9c26cfbb95111b9508dcb5c9a0b4c2"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=7f9c26cfbb95111b9508dcb5c9a0b4c2"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=7f9c26cfbb95111b9508dcb5c9a0b4c2"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v32/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v32/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v32/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true">새싹해커톤 대상 후기</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">yangwonhee.portfolio</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-18nc3u2"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-12rx5qu"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" aria-expanded="false" autoCapitalize="none" spellcheck="false" role="combobox"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🥇</div><div class="info"><div class="categories"><a class="category" href="/posts/Project">Project</a></div></div><h1 class="title">새싹해커톤 대상 후기</h1><div class="info"><div class="author">posted by <strong>원희</strong>,</div> <!-- -->October 30, 2024</div></header><div class="post-content"><div class="markdown"><p><del>대회 끝나자마자 쓰고 싶었는데, 이런저런 일들로 .. 이제야 올립니다.</del>
+아! 물롱 대회랑 상관 없는 일임.</p>
+<p>시작하깨효 ..? (사담 가득 주의)</p>
+<h2 id="-팀-구성" style="position:relative;"><a href="#-%ED%8C%80-%EA%B5%AC%EC%84%B1" aria-label=" 팀 구성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>🌏 팀 구성</h2>
+<p>2024년 6월 쯔음 .. 졸업논문을 마무리하고 여유가 생겨서 그동안 참여해보고 싶었던 해커톤을 찾아보게 되었다. 그동안 눈팅만 해오던 데이콘에서 <strong>새싹해커톤</strong>을 보고 일단 팀 빌딩을 지원해주는 운영사무국의 오픈채팅방에 들어갔다. 참가할지 말지 고민하던 중, 하린님(PM)의 아이디어를 보고 너무 좋은 나머지 무작정 팀에 들어가게 되었다.
+<br>
+<br>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 140%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAACXBIWXMAABYlAAAWJQFJUiTwAAADsElEQVR42lXV51ojOwwG4LkNOg89IbTQSei9BUjo5f4vwzuvdrXn7A+PLVkjS98n2dXW1lZ5fHwot7e35f7+vhwcHJSzs7PS6XRq/WPoLi4uys3NTbm8vCzf39+l1+uVk5OT8vz8XPb29srR0VHYzM/Pl2p9fb0MBoPy+voaP5yfn8fm4eFhOOH09PS0dLvd2Pcznfnl5SVs6ekEU+3s7JT39/fy8PAQDpza7/fDCfnp6anc3d2FfH19HZmIfnZ2tiwsLJS5ubmIzLCupqenQ2AwMzNTGo1GGKaOUdrYM5PHx8djTExMxDw2NhZzpAyPq6urCFkku7u7gY1Ijo+PA0cp2zcSs/39/SJDkcOVTQWrt7e3SFk6HMBTupynzKnUEcYWOWxgDib7i4uL/0VogyEHDL++vgJshyAN6KJwOIzJsHcIZ/aazWappEVwslTNUkqGpSaCdMg53WDQD1sOBWNutVql4sQJcMjoMjJ62BrSxnji5RCO/Y8szpBVTU1NxUL+WQJCN2ObHvsrKyuhx/zy8nJZWloKGyyPjIwEy9aBoZM2NjaCNXiura0FY+AwMLu9vR3Fbj8Z12Wdbqd097vxf7vdLpXy+Pz8DEalBqskQoqIyk6iJ8OMjuw/dtYijwgJsEMGTDiGI2OMAlyZcCYLkWo7eKYt9oMUEWZZICFbjcz44+MjouOAnUPsC8BhWbNsYV41mo2yuroa+cPOWuhkRJhlQW8ggx2C6HUK+2zHigEFA9Ea6QDDgOcYFP+uN8MZnRlpcTlwIB34mGFhhgsmpQcGqak/el1kDY7sHsQGy7xzoI1sKiEOzFnMsG2vt+MHEWkAWYgKEVlGCrzyYSTSpaVW2dzcjNpjiHV7rTr10bp4FfDw8HAZGhr6ux4dHf2rm5ycLFUSoOoT9MQ15NpxC2lb26VdkyEyhyYhKRvhULjol3bvoRflAjeY3tX12atTfjk7KYP9Trm8uQ0de6UCQ7UIv5+fn9+3Dcay7gBuwC/flhfAd3bLRatZTmP/IvTqzqHWSSiowqGbw1UEfA5FQFbI/X7dfv1BOarl3p97z36+PYgTpYGkykeEwneKGbMGNuHbqQlbW1uNw9QfsrSfoRXZWMczis18S9wYbhNG2FX9WDR0AWaTVWPkD/OuLnKQoroxGq9dYyH6EcsOMnQLmT4vUt2i/fJeNJMjQtTnY55k5AOVQ9Rx99Wg58MO40ybDWyVWeU0UUjFjfv/d9ZaGhMT4zH/Xv/7DqecNr8Atwe+V2Astk4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="&#39;하린님카톡&#39;"
+        title="&#39;하린님카톡&#39;"
+        src="/static/5dbb4ae2dc4797d811625489191d6ca0/9f933/harin_katalk.png"
+        srcset="/static/5dbb4ae2dc4797d811625489191d6ca0/30f5c/harin_katalk.png 85w,
+/static/5dbb4ae2dc4797d811625489191d6ca0/04472/harin_katalk.png 170w,
+/static/5dbb4ae2dc4797d811625489191d6ca0/9f933/harin_katalk.png 340w,
+/static/5dbb4ae2dc4797d811625489191d6ca0/0abdd/harin_katalk.png 510w,
+/static/5dbb4ae2dc4797d811625489191d6ca0/39c09/harin_katalk.png 624w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<br>
+<p>많은 아이디어 중, 하린님의 아이디어를 채택한 <del>(내가뭐라고)</del> 이유는</p>
+<p><code class="language-text">생성형 AI를 활용한 사회적 약자 서비스 개발</code>이 주제였는데 여기에 너무 찰떡인 아이디어 이면서, PM이 개발 쪽에 대해 모른다면 제한 없이 무궁무진한 아이디어를 잘 낼 수 있지 않을까? 라는 생각이 들었기 때문이다. (+ 열정가득한멘트)</p>
+<p>모든 개발자들이 그런건 아니지만, 나는 아이디어를 생각하다보면 &#x3C;어떤 기술을 쓸지, 이게 구현 가능할지> 부터 생각하게 되는 것 같다보니 저 카톡을 읽으며, 오히려 매력적으로 느껴졌다.</p>
+<p>그렇게 카톡방으로 PM, 백엔드, AI, 디자인, 프론트 까지 5명이 모이게 되었다. 다들 서로 모르는 사이에 대면 미팅을 하려다보니 어색했지만, PM 분이 엄청난 인싸셔서 금방 친해질 수 있었다.</p>
+<h2 id="️-예선-준비" style="position:relative;"><a href="#%EF%B8%8F-%EC%98%88%EC%84%A0-%EC%A4%80%EB%B9%84" aria-label="️ 예선 준비 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>✔️ 예선 준비</h2>
+<p>처음 나온 아이디어 초안은 이렇다.
+<br>
+<br></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 124.70588235294117%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAABYlAAAWJQFJUiTwAAADKklEQVR42oWV2Y4UMQxF6+t5gW+BR3jpQQIxGlBP711T1fu+V+/7ZnI841bRQhDJSspJbq6dG5c3Ho/l5eVF6vW6tNttqVQqUqvVpFAoSLFY1HGpVNJ55lqtloRhqONGoyHz+Vyu16ucTic5n8/iHY9H2Ww2st1uZb/fa4+Zb71e65i53W6nho+5w+Eg7AfMzGMxDMrlskwmE2XQ6XSUBazCMJAgCJQRa5iDNWsdNblcLjdThlCGOotfAUI9ABDf99UAw5dKpaTb7SozY76NRYLfI4eZTEbzaPlrNpu3vDHu9XqaX+v7/b6uIxp8rOEbUC+KIl30r0Yo96HFfTbWkNfrpUTRSIbDvqxWc3d6T8bjiYY2HA5lNpv9kfT/mReGTfn0MSFfPv+QpydfHh+fFcwv+lKtVhWUhjTMYGNjayYdl8OjfP9Wk68PgTwknL7KQ5fkjcpjtVopQ/K8WCxuxiVwmYyn06nmdLlc6kGew5bzZeeSGrhLKEkul1VBI+x8Pi/pdFoNXy6XU+OyUAHGhaASgBUwivZuInKSaLqQAxfiSE+GFYu4NMaDwUDHGKyNGVKh3S4lmhwk9dyVRCInv35W3Iap0mcD4gXMAPDjA5RxvJFD1aHDds9n5wTtO/k0bu+YcNAnISJ2hJ9MJlXozBM2hhYJm4MRugdN3in0w7CkCwBB5BivI5vNap4sXAwRI2r2YUSgDIkd5L6b5HUACAuY0hOiFYv7EO8bPmWIfkajkVK3kmVhokVjwTyXQ6hLd3H25NqOBNHA0rM6hiFokwILAOUb1oAAhg/jIC6G0DHGGjKAhE1e4gwJF4Zs5pvi0XpjYnPUALsYetJzYwg6oABaqIBwQXxbzWQjPSmyas469mm1sRzSrB6a8mEDa3xcDGup0FalrbfKrcLGgWxwsok3zHj/Vu5tziye87+ZR5jkhOTDzH5AaI8wmKPsExahsskqjkVnBkvPQiMXvAByRv4ABoQxRYIDWAdLqhAGewOlp2nFZiMMYWS3CgA+2NHjJ5/cLIdAgOdGM3aVSvn1JwUAGmQhxiZ8pCNeXOOF1b4BY7x2jD+8fye/AeVfS2TwXYsOAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="choan"
+        title="choan"
+        src="/static/a4babc3593ae36ed3e089b8c8212bce3/9f933/choan.png"
+        srcset="/static/a4babc3593ae36ed3e089b8c8212bce3/30f5c/choan.png 85w,
+/static/a4babc3593ae36ed3e089b8c8212bce3/04472/choan.png 170w,
+/static/a4babc3593ae36ed3e089b8c8212bce3/9f933/choan.png 340w,
+/static/a4babc3593ae36ed3e089b8c8212bce3/0abdd/choan.png 510w,
+/static/a4babc3593ae36ed3e089b8c8212bce3/c5bb3/choan.png 680w,
+/static/a4babc3593ae36ed3e089b8c8212bce3/ef6b9/choan.png 832w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>이런 초안으로, 나는 대부분 유정님(백엔드)과 함께 어떤 기술을 쓸지  이야기를 많이 했다. 유정님이 정말 도움을 많이 주셨다. 난 첫 해커톤 참가였는데 유정님께서는 여러 경험이 많으셔서, 해커톤에서는 보통 어떤 기술들을 활용하고, 어떤 식으로 진행하는지 등등 .. 자세히 알려주셔서 너무 감사했다. 고수의 향기가 진하게 났다. ㅎ</p>
+<br>
+<br>
+<p>그리고 나는 사실 데이터 쪽만 자신있다며 팀에 참가를 했는데, 결국 생성형 AI를 사용하려면 담당은 역시 내가 해야하는 것이기에 정말 대회까지 열심히 서치하고 적용하며 준비했던 것 같다…</p>
+<br>
+<br>
+<p>특히, fine-tuning을 할 때 아쉬웠던 게, 대회 당시에는 gpt-3.5-turbo까지만 지원되어서 gpt-4o를 사용하지 못했다.</p>
+<p>파인튜닝을 하기위한 데이터 수집은, 읽기 쉬운 책 지침에 따라 지피티에서 예시문장을 뽑았다.</p>
+<br>
+<br>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 143.52941176470588%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAdCAYAAACqhkzFAAAACXBIWXMAABYlAAAWJQFJUiTwAAAD2UlEQVR42p1WS0+jZRT+NOqMhEnvpQUKTCnQUqRQyqW0hYbSyh16AXrhPkEuUSkBMmGh0YnGxERnaaJb487EnbtJ5g/wA1y50rg20eVjn2Pe5uvMJ6KLJ+973vd85z3nOZdWKxZLODs7w8HBAY6OjrCxsYFUKoXh4WGMjIzcGeFwGB6PB1o0NobUbApzc3NYWlrC/Pw8YrGYGKTSXUCDg4OD6O/vh5aM5NHt9Yn1QCAAm80Gh8OBlpaW/wSn0ynfae+sfoHh0Aj8AT8S8YRc0qjdbv9f0MyWB7A77GJdeadeU0r6vcKLj1JHPHQ4nHVjbW1tSCaTmJ2dFS7JKbGwsIC1tTVZs9ksVldXkcvlsLy8DJ/PV3dEDOpfJI8zMzPIZDKSpMXFRTFIeWVlRc5ojI/RGNHX19dokOGRNxUW9y6Xq060uld7PSV6atSqTU9PS921t7fDarUa8kNZwSgReqNaZ2cnWltb617oy0Ct9Jg6bre7IQEKDUkhL6VSSTokn88L2cTm5qbIvCOX6XQaAwMDDXwZGmTmdnd3Bdvb2ygWi2JMrfv7+1hfX5fMB4PBOi16ahpC7ujokHIhyCNXZpugzFB5Rmp4xrAJ0kCZa4OHrKtCoSChMUR6xfBZEgyd+0qlIivBeqQ+EY/H0d3d3Vg2VMjlsrVps4dyqYj1Ql7CZd39fZdDuVyWsLe2tuRBnlOHTeD1ehsNtrpdMFnsuNdkxpvNFjww2eq1qK9HlX0VLvek5KWQ7zeZMDXqxaNCGLlMENHww9qL1hqMm19fi4ZJiUce4pfn7+LPmzP8cVMFfnqMykqo5rEJrhbnSyVihAYPPznP4PHx23j68SN8epXFD1/t4Ob7XfHSbjf+6DZoF6cF/PhNGV9/fohvvyzjs+syvntaRMDnhrnG7Yv9+q8GTypR4NcPgd8+AH5/gp+fVZFOJWCzmmCxWAQqi3cxqjkdNqylg/jovSSevJ/ExsJb8qHH04GhoSFpN2bTqOUMDZrNFrx+rxnaq03QXrmP195ohslkklB7enpkgP7TUDBKjjY+Po7YZBR9vT2ITozXqj+G0dFRhEIh6VvVu7clRz/GNOUFe5VVz18+tlNvb68oGA0DgudqRjZ4GIlEEI1GMTk5KaB3lPl7S5kDeGJiQpBIJMCIuJ+amhKZupRVC2ocWRcXFzg+Psb19TUODw9xdXUlPbyzs4NqtSp9y/3p6an0MveXl5c4OTnB3t6enNEgudfY9Ofn5+LJ2NiYgF7wZXpPqHPuGYFeJqjv9/vR1dUFjUOTfyVYHuSPfycUeEfcJquVHpKmvwDce27EAWh65QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="talk1"
+        title="talk1"
+        src="/static/b1b9fd4ad57b02f0df19afa2893cef50/9f933/talk1.png"
+        srcset="/static/b1b9fd4ad57b02f0df19afa2893cef50/30f5c/talk1.png 85w,
+/static/b1b9fd4ad57b02f0df19afa2893cef50/04472/talk1.png 170w,
+/static/b1b9fd4ad57b02f0df19afa2893cef50/9f933/talk1.png 340w,
+/static/b1b9fd4ad57b02f0df19afa2893cef50/2fd48/talk1.png 508w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>매일 저녁 줌 미팅 후에 피그마 띄워놓고 할일 하던 우리 팀 .. .</p>
+<br>
+<br>
+<br>
+<br>
+<h2 id="-본선-진출" style="position:relative;"><a href="#-%EB%B3%B8%EC%84%A0-%EC%A7%84%EC%B6%9C" aria-label=" 본선 진출 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>😝 본선 진출!!!</h2>
+<h4 id="-예선-링크" style="position:relative;"><a href="#-%EC%98%88%EC%84%A0-%EB%A7%81%ED%81%AC" aria-label=" 예선 링크 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://dacon.io/competitions/official/236293/codeshare/11384">🔗 예선 링크</a></h4>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 90.58823529411765%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC4UlEQVR42nVUyW4TQRCdv0ZC4hAJiQtCHCOCWBQ4IBRQDghxRYrtxMZLvC/xbo+Xscee8Wxe5tGvknEclrFK1f2q6/VzdXVrhmEgCAKYpolMJoNms4lcLodCoYBarYZqtQpd11Eul5FKpXBzcyNxYtvtVnLX6/XeNH00EnA+nyOfz6Pb7aJYLAphpVKR8WAwEB+LxYSYGxP7J+Em8OG7Duh3asFms0UYhtjtdmq82SfRE6dnjJjnefB9f2+ca8mOhXTfxo+KAWO5AhAl3SaKhbd+qzBaGB7gBxaqn6YbJobTBUwnVIoUtA0h3064H9rdt11v7ycHsU2wUYSqFr1hG6Y3wmDWQa1bxnSlY7ToY2wNZDyxh3usNWyg2imhOair9V3BuW7uTdAYVFUN1W51vYSz9BucfH+JZ2+f4Muvd/gUf43PV2/wNf1e5ufZU3z8eYynJ4/x/MMRjo4f4dW3FzjPneIsdR/XWEjXc2FacywsE/pkCMtZYjTVYZhTLO2F4JFl8xmkMkkkrmKSwzi97VroDbrQXNeVE3IdF7ZlY6SP4Hs+5rM5rKUFz/XgqBixmTFDsVDE9XVetVURxtQQ3Fk5CPwAI9WCe0LHcbBYLKS/PN/DbDbDcrkE46vVSv4FezWdSSOZTIofj8eqVW7j5GCzPyC0LAvD4VDmh4SM2bYteK/XQzwel0ZnI5OMxr78SyEJqfBPwug2sPeo6uLiAp1OR+Zcy/gDQh4MFfA+9/t9IZlOpzLnRo1GQxRls1lVv2u5opeXl2i1WkLM68gc/js55eDu2lARFUZ3m4qpgBgfDRKl02nU63Uh50PRbreFkDlUrx0eCCVTDYlYYKokzjkVcBMq4yPBOnJNVF8aHxYtKmh0miThJpFC6dO7g+G4VCqJ0kQiISUhxjzWWBRy4aHK/50yPVWQkMY3kYSRkH3bSFMrkGqoim1BgslkIgkkYYyeG7KWrCEfX25KPNqYtf4NvURAe2ROUnAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="bonsun"
+        title="bonsun"
+        src="/static/de3fe88df1bc95861a6cd514ec4bba87/9f933/bonsun.png"
+        srcset="/static/de3fe88df1bc95861a6cd514ec4bba87/30f5c/bonsun.png 85w,
+/static/de3fe88df1bc95861a6cd514ec4bba87/04472/bonsun.png 170w,
+/static/de3fe88df1bc95861a6cd514ec4bba87/9f933/bonsun.png 340w,
+/static/de3fe88df1bc95861a6cd514ec4bba87/fc1a1/bonsun.png 466w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>8위로 본선에 진출하게 되었다 !!!!</p>
+<p>이 때부터 본선 후기 엄청 검색해봤다. 안설레는 척 .. 새싹해커톤 후기 일일히 다 본 듯 ㅎㅎ</p>
+<p><em>아마 이 글 읽으시는 분들도 2025 새싹해커톤 (하겠지?) 본선 진출하시는 분들이.. 읽고 계시겠죠 영광입니다! 팟팅이에요</em></p>
+<br>
+<br>
+<h2 id="-본선" style="position:relative;"><a href="#-%EB%B3%B8%EC%84%A0" aria-label=" 본선 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>😚 본선</h2>
+<p>작년 후기에서 읽은 것처럼 DDP에서 진행되었다. 너무 떨려서 10시부터 시작인데 9시반에 도착했지만 길을 헤매는 바람에 … 10시에 도착한 팀원들과 같이 들어갔다 ㅎㅎ;</p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 132.94117647058826%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="ten"
+        title="ten"
+        src="/static/e65dc8c4248c9e12b6ba59a729d969e6/9f933/ten.png"
+        srcset="/static/e65dc8c4248c9e12b6ba59a729d969e6/30f5c/ten.png 85w,
+/static/e65dc8c4248c9e12b6ba59a729d969e6/04472/ten.png 170w,
+/static/e65dc8c4248c9e12b6ba59a729d969e6/9f933/ten.png 340w,
+/static/e65dc8c4248c9e12b6ba59a729d969e6/0abdd/ten.png 510w,
+/static/e65dc8c4248c9e12b6ba59a729d969e6/c5bb3/ten.png 680w,
+/static/e65dc8c4248c9e12b6ba59a729d969e6/5bf79/ten.png 966w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<br>
+<p>대충 현장분위기 .. 생각보다 테이블이 작았다. 5인 같이 쓰기에 넉넉하지는 않았던 .. ㅠㅠ 그래도 멀티탭 준비해주신 것만으로도 감동이었다.</p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.29411764705883%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAPoAAAD6AG1e1JrAAADhUlEQVR42g3SWU8iBwDA8fkQfWjSpjFN+tDU9qnN2uqquLpYFHQQEFTkVkA5hJEbFB1muE9BQY7KzSqOAwKCIChqrbqb7Deqyf/99/IHIIVEq96ElBv4p2Kv1coE4bjT/OWl+9xvVMqZaNj7KZ/4/HjzfNdKHAWlIp6CR5/ljE3TPkytDQOGbZnFsGXWQ5cZ26V/JqAcq+O5L6/38SPvP8fBTDJcxwu3HbxeKfjdiH3fchh0xpP+LZOEsDYOyCV8+YbQvSvuhYmN3e8qzpXiHliKO+LHEQTZ39vR1bBcv1stZhMuFA75HKeFRPU8V8cKSMgEaLflOq2KTvuQ3SHyOb+kDNN9x2QTJuAuJpa0nSQPbtqXnSYW9HscKJw7ieJn6RpePM0nsskIYJfxYEhOJBKYDAJHPG9WLfv17Ix5tutnNd3M67imkrKmUxG7050+iVfP0+VS6q2jsCca9gA60qhycULAB3f3jKfZKF5KNBsXpZTv3j+DoYzy3nxjn+Dc14dgVTFmq9ewoA/By9kqln/DAebIr+/Yg9Q9+r+92n23+nhXe33qYLngjXPyZIfKW6KvUOeW2VvXMV3NvpD1QbXK6VW1fBh0tC5LgHRyCOaBIhv3poPdtS+e+vWABz0KITUH6QJdEHBZZApthDArELGKLmnXv5yzkDPH3lg0fIXnARHjo1BPP6nFvr7clXLxcjGFwuZYxH1uHW37qIo1lmaTLRaABMoQiTrsU5OL0B9p9e9RdKOKnwFr8kVxROQqoY3LUjIayCQj4YA9HPJeoNNtZEgv5xqVIpWUsc76kSOYIjAoCi4pDY0UVIMH0DTAlNJXfLTtKNRqlt9+6F1j4QDq8zowF3jrIQr4cxQ+kyaco66+4yk25nmsVe4StME9VI7FNLMAR8ZcRqhCHafXqr48th96tef7q/5tA/csvIbm14WUQdKf308NfDMx8O3oT/pdtcMk1G5t7hpUViMEgDwyWwKOr75vNc/+6zefH67vOtXrxumZm1qx/iVb/W2JC/7NnhuYGBgi/yySLbot6/sGpW1H54AtAIM6Nrs6DXJAq8WEWM0uZMeokcllAoWYKuFNaETDLvn7Erx45Vn6Ghe4lGQNn2QzQQdeJJ9JAJzxHyzbag+CmrQaix4ybCuMkLTgFLeCon5o+fOx6Mk38+AktN30ugM8sAh1crHdanTCFpNO/T+GjcuTLeoU1wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="nametag"
+        title="nametag"
+        src="/static/3fb56133b32599e948531ba1e0e683a8/9f933/nametag.png"
+        srcset="/static/3fb56133b32599e948531ba1e0e683a8/30f5c/nametag.png 85w,
+/static/3fb56133b32599e948531ba1e0e683a8/04472/nametag.png 170w,
+/static/3fb56133b32599e948531ba1e0e683a8/9f933/nametag.png 340w,
+/static/3fb56133b32599e948531ba1e0e683a8/0abdd/nametag.png 510w,
+/static/3fb56133b32599e948531ba1e0e683a8/c5bb3/nametag.png 680w,
+/static/3fb56133b32599e948531ba1e0e683a8/669cd/nametag.png 3024w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<br>
+<p>거의 시작하자마자 점심을 주셨다. 점심은 서브웨이 !!!! 아래도 계속 이어나가겠지만, 밥을 정말 든든히 챙겨주셨다. 간식존에는 대회 내내 먹을 것들이 쌓여있었고, 심지어 계속 새로운 간식이 있었다.
+또, 저녁부터? 남녀 각 휴게실이 있다고 들었던거 같은데.. 우리 팀은 바빠서 한숨도 못 자고 휴게실은 구경도 못 했다.</p>
+<br>
+<br>
+<p>점심 먹고 또 간식존 가서 간식 엄청 먹었다. 주최측에서 드라이샴푸, 소독티슈, 세면용품 이것저것 챙겨놓으신거 구경했다. <del>구경만한건 잘못이었다 이때 챙겼어야</del></p>
+<p>아래는 우리 팀의 밈 ..
+gpt3.5 fine-tuning 중 epoch를 너무 높였는지 대화 문장들이 다 저렇게 나와버렸다.. 근데 그게 이제 밈이 된,</p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 182.3529411764706%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAkCAYAAACJ8xqgAAAACXBIWXMAABYlAAAWJQFJUiTwAAAFJElEQVR42nWWWUxUVxzGJ6MDGbXADHNnQBYZlkhTUBRQBMQFkEUtyKLsCLK6g2l88K3huZtJ97QxGrtobPpijI01jTVtTZfUtg+tjUmbPjV9a/r89f7O9Ewhc334cu49957/+f+/7/ufe3179uxRV1eXent7NTAwoMOHD6u/v1/j4+MaHh7WzMyMenp61N3dra1btxpUVVVpy5Ytqq2tVX5+vrKzs+U4joFv586dmp+fN5iamlJfX5/m5uZ07NgxHT16VIuLi5qYmNDk5KSGhoZEAmx88OBB1dTUqKCgYGXAtrY2nTx50iwi0ODgoMmOezuOjo7q9OnTmp6e1t69e9XZ2anW1lYTMCXD9vZ2Uw4v7N+/X2TMogMHDphx3759BrzD/bZt20zJlO5ZMpM2SEtLizo6OtTc3GxgN9m9e7d5h0A2GPDMkEUQf/z4ccMTI/eUBwUXLlww13AMf2wKuCZbT1Hg8MyZM0ZhOGSxFeHs2bM6ceKETp06lRQJbhFvx44dysvLS83wyJEjJgtG1EMIrHPo0CEThHk4JBDz9fX1T7bN9u3bTers1tDQYLhqbGw02LVrl3jOMzjbvHmzCVRdXW3487QNfOA5MpydnTWlwh1lwh98joyMmOBNTU0mO7sJY0qGZMUigtAxmBbgPebZhDLHxsa0sLBgggO6ByesX79ekUjk/4BwxiK7mHazgrAJghHg3Llz5hrReA+jo7RnQAKgIooiAtmgOiJQOurjU0SAb1uyp20glgd1dXUrXkYcnnFPIIRgBFYQT2OzMxzBGxnBHRmTJRnb04dAtkOAVTpFZdSjOwCL8Rz8wRM0IAQ04E02xRFshjtYm2JsaxuyIxgBEINFBIJLBADMcdIgBj6FJk/bsBMjL9E5LLBc2v5lHl6XHwxPLJnjiZ1pL7wIZ9zTr4ycOJs2bUqe1HaEx5SA7Apf2ANBKAu+8N358+dNB+E9/MnG9Dcbc8xRUQqHlEQwgsKjPRCYg0vmANwiHELRBMx5GpuPE/bg5aWlJaM0mVI6mWF8SrZUcJLDKff0dUqGcMSLBKJUFtjTxXJlYU8bC09RLMnAEm9VxMz2ePOC53lYXl6ujRs3rgBzIB6PKycnR7m5uaY0L0Sj0WUcRuSDH/sNxsS2fLqC4Hl5uSoscBc6ZJGKaDSimEXMDVhRUZHkixKggLnKykqVlJQoXvyMCjc8rXVPxbRmreMiqjXrolqbhJMEz33hcFhZWVkKhULJkblQKOyWkq3nn1ujyxfTdemloK5cTODyK0G9+2JQl14O6p0XEuD+svvMZ8lcjmjUcYM5yok5evxFQH987dcPd1bp75/9+v2BX39+79dvXyWuf7nn18NPVunXz/3655E/NWCC4IgZwdRwhq6+GtQHryfw/mtBffhGAtffCuram4n5G28nnnlmaLPMynK0oTCix18G9OBmQI/uB/TT3YC+vRXQd7cDbtar9dDFN+79/Y8D+uvH1fLBGcBLlj+4LC6Oq6LS/fZWx3XvozTdfi9dd6+n69Nrabp5BaTrsxtp5tmtq+nm+cM76fKVlZWptLTUGBTvcY//8FcsFjNjYYGj0mJH8SJHxS5K3OuSuHsdj7hzEXfOHTeElZ8Xlg97YJOioqJktxB4ueqZmSFlZLjI/A8ZCWRmhd2KXGpCbtDiMtdy1fLRn7SX/RjZLxv9bFEP6rmuWzHW1FS7XZRjRGxsbHAPjGcTnwC+uxz/9iO/HMvn7bX97vBvSWvCP7TRFP8CaLznlbzF3E8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="lolololol"
+        title="lolololol"
+        src="/static/309a01e9301d72ef24d6bb7a7726b06f/9f933/lolololol.png"
+        srcset="/static/309a01e9301d72ef24d6bb7a7726b06f/30f5c/lolololol.png 85w,
+/static/309a01e9301d72ef24d6bb7a7726b06f/04472/lolololol.png 170w,
+/static/309a01e9301d72ef24d6bb7a7726b06f/9f933/lolololol.png 340w,
+/static/309a01e9301d72ef24d6bb7a7726b06f/0abdd/lolololol.png 510w,
+/static/309a01e9301d72ef24d6bb7a7726b06f/32056/lolololol.png 602w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<br>
+<p>정현님(프론트)이 회사 재직 중이셔서 낮에 참가를 못 하셨다 ㅎㅎ 퇴근하고 저녁부터 밤샘을 함께 ^^ .. 하셨다 .. 심지어 다음 날 연차 쓰심 …ㅎ</p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.29411764705883%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAPoAAAD6AG1e1JrAAADnklEQVR42gGTA2z8AIBKMAAHBiclISseHiETExcTFx4TDXFGF1dAKF1bWZSCb7eYhnBVRK+npPTy6p2bem5uaoOAf8V6W7FZJgBPRidBPBglKRZ3OCWWMAtrNyFgQyXunC/AgC5VT0yahnexlX55YUyonZbx7/KAf3Vwa1RoZ2WgeGuqblYAUE4ccWopUVYrhUYuzjsM4lIZwk8W3okk4Z47ST80bmtohHxxUUpEhYB9+ff4h4iHY2JecXJxc25qamVhAGpkJW1kG1tVG01GPLJCHdJXH6BIF6VoKq2OXWFeWIWDgHFycTEzM2VlZf///5SRjzIsKC4pK5djGaR0IwBeWDlgWTZQTDVKTEpYTUNbTUVZWFVSVVhERktQUVFoZmNkXlk+MygvLShpZmVYWFdxUDGZa0DRfQnwox4ARURGXVxdbmxqendwdXVxdHRwVVVTZEwyb00nPCkVKCQhYVxXlXVbj3FUb1E7NCkkf2lPuoNQ0n8P9qckAJyUhNXJsfHlx/LmxvjqyszDrTY2Nr1/NP+6Pf2zP25JIURHSYdwXLuPbMuZdoNjUDUuKXZVO8V5Fv6tHgDq1q/35sH347r458D97sjg07VITEmKVjm0XyDNjDVqQxksLjJ4al7MonuidVeMbU7skU7HilOMXiD/riEA5NCn7dan9+G2+ea++ea78+PATlBITjw1li8JdjYYTSsdGh8jVVRRtohsa1JDgGNJ95tc+o9Au2Umt34zAPTjvu7Uovfku/rpwfnov//twqujj0hEPpVIJrBVJMZNGI0vDkpCO4h+cVdRRmdXOsmHRvyGPn1AGisfGwD25MH35L345b3557/66cL657rv4sFbWlJVPS+0VxynRhuVRCVeTEBXW1JSTCc2NRM4LxtLMyVZVE3AtqQA9eXE9+W+9+K2+OS5+ee+9+fA8uO9ZWFVRT84XVNJREgwaGg2Skk5RERFV1UudGsoaGQuAAADc21g//nZAO/evvblwfbkvvbku/blvfLlwf/xy3NvZCYnJ1ZVNHBnGpeILUxGIDo7PlNSPXh3Nnx6Ti4sJj85NtnJqgDk0K3x37v25cH558L25L7w48Pf1Lh6dms2MzI7OC9LRhlYVRtTTBg2NilRTEmpUSaHQScpGRgQCgu2o4UA1cKh6ti54tO1vLGbjoJuaWJWZ2FbgEIlt14fqmMl1HsxpXA1VlQ7Y2BRQUREn0Mi8lYXZSsUBgcNnI146O2dcfZ8wKsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="dinner"
+        title="dinner"
+        src="/static/f0cad78f2874c5abdd5ec96357b03565/9f933/dinner.png"
+        srcset="/static/f0cad78f2874c5abdd5ec96357b03565/30f5c/dinner.png 85w,
+/static/f0cad78f2874c5abdd5ec96357b03565/04472/dinner.png 170w,
+/static/f0cad78f2874c5abdd5ec96357b03565/9f933/dinner.png 340w,
+/static/f0cad78f2874c5abdd5ec96357b03565/0abdd/dinner.png 510w,
+/static/f0cad78f2874c5abdd5ec96357b03565/c5bb3/dinner.png 680w,
+/static/f0cad78f2874c5abdd5ec96357b03565/669cd/dinner.png 3024w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 132.94117647058826%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mentor"
+        title="mentor"
+        src="/static/0ab451e051bc78377af726227d38bd33/9f933/mentor.png"
+        srcset="/static/0ab451e051bc78377af726227d38bd33/30f5c/mentor.png 85w,
+/static/0ab451e051bc78377af726227d38bd33/04472/mentor.png 170w,
+/static/0ab451e051bc78377af726227d38bd33/9f933/mentor.png 340w,
+/static/0ab451e051bc78377af726227d38bd33/0abdd/mentor.png 510w,
+/static/0ab451e051bc78377af726227d38bd33/c5bb3/mentor.png 680w,
+/static/0ab451e051bc78377af726227d38bd33/5bf79/mentor.png 966w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<br>
+<p>아마 저녁먹고 멘토링을 진행했던 것으로 기억한다.. 슬슬 정신이 나갈 무렵, 멘토링 시간이어서 다시 환기하며 집중할 수 있었던 것 같다.</p>
+<p>멘토 분들도 다 현업에서 종사하시는 분들이 오셔서 각 프로젝트에 맞는 조언을 해주셨다. 추가로, 비대면으로 데이콘 게시판으로도 다른 멘토 분들이 계셨다. 우리는 대면 질문만 진행하였다.</p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 132.94117647058826%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="people"
+        title="people"
+        src="/static/489201442b800d4cb5b8dc9e2d9ce722/9f933/people.png"
+        srcset="/static/489201442b800d4cb5b8dc9e2d9ce722/30f5c/people.png 85w,
+/static/489201442b800d4cb5b8dc9e2d9ce722/04472/people.png 170w,
+/static/489201442b800d4cb5b8dc9e2d9ce722/9f933/people.png 340w,
+/static/489201442b800d4cb5b8dc9e2d9ce722/0abdd/people.png 510w,
+/static/489201442b800d4cb5b8dc9e2d9ce722/c5bb3/people.png 680w,
+/static/489201442b800d4cb5b8dc9e2d9ce722/5bf79/people.png 966w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>밤 10시 풍경 ㅠㅠ 새벽 1시까지는 거의 모든 팀들이 있었던 것 같고, 새벽 3시쯤부터 자러가거나 사라지기 시작했다.</p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.29411764705883%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAPoAAAD6AG1e1JrAAADnklEQVR42gGTA2z8AMmxmN3EpMWxnMCum6yZiLKgi8i0lNW6mtfCpunfwN3Kr97RptjQq9zWvO3q1oNuYx0FBTghHti8rPTWxwC/qpfWwavdy7jt3cvWy7a4r5a4sJDCuJy+tJirqofJw6O1tZe+vJ6/upeusI6jlIF7YluUe2746dT/8dsA4NDB4dC+1MCq5NG83MuyxbaZtKmKwbSZwbSXpaN9wriXs7CMvbqYw76drrGPoJR5gWlbo4ly3LqZ/9SpAPPj0+rZxtG8puDOu93Pu8O2m8Kzlse3m8i4m6WifcC3lbm1kru3lLq1lbKwkIaDbmFVS4ZyYsOYffGzigD359Xq2MTTvKLiyqzZvJfBpn2zmXS6o4bOvqKlo3zAtpWzr425tZS2sZC0sJCdlXqtfmjUlHLflnLknnkA9OPS5tPAzq+OupNso3xclnVbkG9WpIhvv6uQpqB6wreUtK2Jv7mYsKyKsq+Qsp572Ypo45l11ZRzw4FkAPHhz+LLt6JvUI1mUoRjVHxbTINfTIFXQ4tdRdnDpN3JqtzLruzav8K4mK+ria6dfcJ6Xp1mTpVmUculiADv383o1cOIUz1xOipnMyZmMyNqNydpNSh3TDvJtpXNvZvSxKbXyKvDuZmup4SsooK0moXFm4XLgmzdvJsA7t7N7dvMhF1VYjczWjAuVywoWjEtXzg1cE1DrJ97qqN8r6iFybydzL2epJx5vrSX8uja+Oja8d/T3cq3AO7ez/Dg0Y1uZlw7Ok4vMkcoLEwuMFY5OW1PSMmyldG9ndK/oOXMsMq3mJ2VdK2kiPfs3Pru4Pvw4unaxgDt3c3y4tKYe3RcPz5LMTVCKS5JMDRXPj9dRD+Ogmyxooasn4WcknqnnISXkXalnoX06dn26tr36tvp2sYA7N3O8uXVoIiAXkNFTjc9QiwySzQ5XENFW0VBenZklI14l497lI54pJyDnJR7op2E8OPU8uTU9OXW6dnHAOzczfPk1KeQiF5ER1M+RUcyOkw3PltDSFtGRH58aI+Kd4qGc4+KdZONdpaOeKqkj+zdzuzczu/g0OfWxQDn2Mrt4NGqlI5cQ0hUQUlLOEFOOkNVQEdgTE6Ri4CfmY2gmo+spJm3r6O7sqbVx7vm18jn18rs3M/j08QA7+DS9ujauqWdYkdNWUROUTxIUDxHVkJKcV1gzsK43dLF39TH49jL5tnN6NrO6drN8eDT8+PV9ubY8uLV3pQtyf6R4OQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="baemin"
+        title="baemin"
+        src="/static/a0653b002ebeaca48692a05a5b11f362/9f933/baemin.png"
+        srcset="/static/a0653b002ebeaca48692a05a5b11f362/30f5c/baemin.png 85w,
+/static/a0653b002ebeaca48692a05a5b11f362/04472/baemin.png 170w,
+/static/a0653b002ebeaca48692a05a5b11f362/9f933/baemin.png 340w,
+/static/a0653b002ebeaca48692a05a5b11f362/0abdd/baemin.png 510w,
+/static/a0653b002ebeaca48692a05a5b11f362/c5bb3/baemin.png 680w,
+/static/a0653b002ebeaca48692a05a5b11f362/669cd/baemin.png 3024w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.29411764705883%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAPoAAAD6AG1e1JrAAADnklEQVR42gGTA2z8AKihkaullKylla6ol6+olrOrmrGrmLWrmWiBZ7++t7OrqOTe2MjEv7Guq761tZutpYSWg9XGtsbBssW9sAClnouooY2qo5CrpJCoppOZm4WZmoSrn41ogGSDioGjoJq3uLCRkYyCgX6alpWOpZt5i3rEuqy3r6KGfHQAqaOOr6eTs6uWSEA4bYJ3PXRaOWVGt7GPY3hbr7eqoqKbwcG4lpeQoqSez87JiJ+Rd4d4zb+6pq+pRFxXAI6TgqqnlpiRgQsHBWJoZrO/uaCrnrq/oW6Dbm2IbnOLdG6Db32MeXSNeH+Thlt4aH2Dd4iIgDdvZBxuYABARUAqJiIsJB8CAQMcGhaTiHrZwK/StaPOsJnJqpTGppLKqZbOq5fJp5PQrJret6XuyLiAcm4AKSMtXU4AbWtnOjMxck0+IRkWHBgWm4qH2bCVzY8v1Y1DpIV0imlbyXZexW1X2ZF67MOt5bmk6sCuspKDFi4mEisnAGJlYTEvLaGOg1lSSik3MISEgNWwj8qRQch8RbSSeaqLetOZhMqQfNSfit+3o+C2odiunPTg1KGcmB8cHwAzOjGNfHbNurOQjISOmoGTd2/OqZO5m4y6m4rAnYrFo5LKppbNppTNqZjSqpjcsqPXrJ7v4dnZ2NNgYF8Avbu23dzY1MzL3NXM08/HwLGp0q2YxaGNyKSQzaiT062Z2quZzKSW062fzaWTwp2AvJOC2srBe3p2cnBtAOfk3+Dc1uHX0dvX0KWmp4iIhsakjcukicqiicmhi9CqlNOrmcWpoMCsqbiglc69p9PAtayjnYSCgLOwrgDJxcHJxb7MycPEwLtYWldubGu9pYi7on/ApI7BpZXJt6u+rKLUsZ/LvbrEs6+/s63Ivri7ubWppZK0sJwAyMXB39rV5N/Zr62phIWDuLKsxrmwxsC+0szJz8rH1tDMy7u00q6g1bGUxp95nJmfn5ufsKum4t7M6OTSAEpKSFVUUUhIRT08OkFBQEhEQKidmJSbpbS0tbu4tr23t8rAwNS1qOCtktutk82nltComJ6SjNXW0uzo5AAVFBMSEhBHRUIZGRgICQgcGBapkoWtl4y0nI7FqJrMpobRsZXZtKbarZffsp3esZvjt6aZi4bIw7vo49oACgoKMS8uk46JdXJuKysqKCMivZ2MzqaJwZp7xpqDypp7yJ2BxJ6N0K6hyLOw1Liw4bKhpZ6bWqSzv8zISZwTV+/V+vYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="preset"
+        title="preset"
+        src="/static/b6505357c19ede14343af91aca321af8/9f933/preset.png"
+        srcset="/static/b6505357c19ede14343af91aca321af8/30f5c/preset.png 85w,
+/static/b6505357c19ede14343af91aca321af8/04472/preset.png 170w,
+/static/b6505357c19ede14343af91aca321af8/9f933/preset.png 340w,
+/static/b6505357c19ede14343af91aca321af8/0abdd/preset.png 510w,
+/static/b6505357c19ede14343af91aca321af8/c5bb3/preset.png 680w,
+/static/b6505357c19ede14343af91aca321af8/669cd/preset.png 3024w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>커피를 배달시키려 했는데 정현님이 사오셨따!!!!! 이때까지만 해도 정현님 밤샘 안하고 가시려고 미안하다는 선물이었지만 ..</p>
+<br>
+<p>그리고 다른 팀에서 포스터 붙여놓은거 ㅎㅎ 보고 ㅎㅎ 우리도 질 수 없다는 생각으로 정현님한테 프린트 해오라고 .. ㅎㅎ 그래서 귀엽게 붙여놓았다. 다른 팀에서 구경하실 때 설명드리기 좋았다!! 추천 ..</p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.29411764705883%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAPoAAAD6AG1e1JrAAADnklEQVR42gGTA2z8ALWvolhRSGBSM0Y9LEU7NW1jWpF8a3VcRotsR45jOXNgQo6JZ42LeVtWTIF7dnZ0cFFRTVJSTp2alb66tADFu7CFfnaihFlQSD9IQ0E+OTKUgG3NsZmjjXWefWGSgVWxymCiw1x5jEJrcj1LS0ZKSUhmZGCdmZK4tK4AzMO4v7myRkE+Q0A/ZFtMhnpliIJ5mZaOcmtuooqDk5WKo5dvuqRsoY5rrppzopuPY2NhkY2Hr6qgmJOMAMK6r9POxry5t5+ak3VybIqGf396c4OAeG9mYHxYWKiTjZSKhN7W0+zj3ung3PPu6cTBu7KtpcC6srGspADBubHk4Nrw7eemo515dW6VkYl+enJ8dm12dWxwVVN/TVNrY1y4tazv7Ofr5+Hk4tzp5eDEwLi2sqq9t7AA39rU8Ozo4d3YpqKdfnt0jIeAhYJ7eXx5b2tkhoJ6hYN7c3BpiYV9tbWy0c/M7+vl19bQ0tDMwb22trGqAOfi3ejk4NTS0I6KiUhIS3d2dJCNhIKGhXB1dZGMgnp2cIOAd3p3b3Jyb5KQi5+emoOFhI2Qj+Db1cC7tADo5OHp5eLLy81panNiZGd3gIFtcXOKhn55eHN9g4NsbmyJhHlraGKHgnqLhn16d3GRjohnbnKbnZzIxsMA5+TfwMC+sq6qUHOLJ1l9XGNsjpKOc3RxgYqKaXBven9/fHhwe3dwl5SNi4h+h4N7eHZygoSCgoSAvLmyAOPf2n2IjVtygydQfA8zXG1tb4mVllJfZYqTk2JgWoSBeGJfWpOOg2hmYIuGfImEfJuXjH15cYR/eF5cZQDm39pcjKgGVI9tdYouRF9ydXWRm55fYF6PmJhiZWSooZRvbWacmI2AfXaOioGCfnaUj4V1cmyYk4xlYmYA5d7ZYpS0O2SNbX6QU3iOlpqXj42GhoyLjZSThYuIlpmTbGhetbCjhYJ6pqGWfHlxcm1loJqMrKWalpGJAN3d28/Nyre3uJiisZCdpoCNlDtMWlx/lnB0c29zcV5rckNCPpWSjE1LRmhmYF9eWVRTU5WRilVUWGNiagDk4+C9xMqlr7q5v8u3vcN5cWkLKEcFRHQ7ODtUT0wzNzoNDg0kJCMHCAcTFBQrKycaHS9FRlM3NToZFSEA5+fk4eHf29zb0dLTrqCkgXFqdXl5YGNsNy88gX9/sq6gZWNdj4p/k46CZ2Rdt7Cjd3JshIF8x8K1UUhHvH7cUf8nA3MAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gansik"
+        title="gansik"
+        src="/static/efa8e34797b43fafacdfe955273cd2b8/9f933/gansik.png"
+        srcset="/static/efa8e34797b43fafacdfe955273cd2b8/30f5c/gansik.png 85w,
+/static/efa8e34797b43fafacdfe955273cd2b8/04472/gansik.png 170w,
+/static/efa8e34797b43fafacdfe955273cd2b8/9f933/gansik.png 340w,
+/static/efa8e34797b43fafacdfe955273cd2b8/0abdd/gansik.png 510w,
+/static/efa8e34797b43fafacdfe955273cd2b8/c5bb3/gansik.png 680w,
+/static/efa8e34797b43fafacdfe955273cd2b8/669cd/gansik.png 3024w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<p>주최측에서 계속 세팅해주셨던 간식들 … 새벽 간식만 찍었지만 계속 새로운 과자와 간식과 음료수들이 세팅되어있었다.</p>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.29411764705883%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAPoAAAD6AG1e1JrAAADCElEQVR42i2TSW8cRRSA+xfxC7hygCNXkOCAkDgQkYCCIyJEghAmGJM4CNkhHi/xjMfjac+4e3qprfeuqt67x+1txguDgtgs1gMgIUGNjfQd3uF9byuVdJrAsxQJRDCOwVGoF1gGm4t6Z/Wr+x/P3n6n9eX8t0zZ1xpz117bWbhrrT+g/Y3Ut4c8lCaldZ7iswyfxFBwGGqhsmb1W+rW2vLD2ebSgwv9zj/yi6edW++//dbszLVHd248vvdBFrgV8yXR8DzDgnFkCrnAHaq3OdGVdqP7ZHF54V56+5WL956nc9cbX8yvPPzs1puvL81/sseDInSlswx9XVgnERgzY2h1A3W9oFaIVCA3ta211aX7vZmbx9dvyJ/PtRuL3u62sd2KHFRSl1tI+qa0BacxHDEj0ppFgEruhlDxjB7YaYFuE8kt2F1XWg1X7f5wVPx0dljHQepZU3lSWJNiKpeoUzhGHYd5QChW6aXvG32ONF/r4d5Wzdw/f5z8+8fFd6M6ckjmO9L59FSgItsp6u9xf497uU8SB3CicaxFlpk4MIAqw8aoyJ8e708OhiX1YweJNGkcgRx1uN4uqVNHfsXcLCC5j4WfuDDzceyhGgwSAo6roo45IzCycezA1EVSZct0sCGyh9wTbUUJIWTUHaYsZ27qoYp7F+PDozRiGFxqJLZhbIOp7PUbiW0Ip6LOkDli4TxwDsFqsXJzH7US35oclH/99ovg/KAWR4oEtinkzMNSYHRTn+QhEdNWIaqDwYm/E3760vqrz+jvPpfaxkEW//3rz79///S4zJiFGAHcMsXY050p1hMPpWJJV1Q1iSr7vTVl5gU08yz46OXYxq4xKKlXhm4ADIqB4Eqedub2NBJjCAKgwn5Hbq5sL3y4efcNdeNxgMzIRiE0/SsTCUxOYHJ1bUp0hv/HNxXX2DXkVmvl0ZPlJbPXCZDGiFlQf1QV4lohMimG3IKJi/PAkjygBHAgNDKQsdIVY4P+1m571dzZDJFOseipiW8wGg6ZhRmGl0+FEtfKA/s/QQaUFL6wmm0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="cupbb"
+        title="cupbb"
+        src="/static/2b1ae1abd96e8e4f8156127ddda5c1dd/9f933/cupbb.png"
+        srcset="/static/2b1ae1abd96e8e4f8156127ddda5c1dd/30f5c/cupbb.png 85w,
+/static/2b1ae1abd96e8e4f8156127ddda5c1dd/04472/cupbb.png 170w,
+/static/2b1ae1abd96e8e4f8156127ddda5c1dd/9f933/cupbb.png 340w,
+/static/2b1ae1abd96e8e4f8156127ddda5c1dd/0abdd/cupbb.png 510w,
+/static/2b1ae1abd96e8e4f8156127ddda5c1dd/c5bb3/cupbb.png 680w,
+/static/2b1ae1abd96e8e4f8156127ddda5c1dd/669cd/cupbb.png 3024w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<br>
+<p>새벽 .. 3시? 4시? 쯔음 하린님이랑 둘이 대회장 계단 쪽에서 컵라면 먹었다. 다들 책상에서 엎드려서 주무시거나 벤치 같은 곳에서 주무시길래 컵라면 냄새 안풍기는 구석으로 ..</p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 216.47058823529412%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="crazy"
+        title="crazy"
+        src="/static/2d88c55b26a78abfc5ff974e04c2f1a7/9f933/crazy.png"
+        srcset="/static/2d88c55b26a78abfc5ff974e04c2f1a7/30f5c/crazy.png 85w,
+/static/2d88c55b26a78abfc5ff974e04c2f1a7/04472/crazy.png 170w,
+/static/2d88c55b26a78abfc5ff974e04c2f1a7/9f933/crazy.png 340w,
+/static/2d88c55b26a78abfc5ff974e04c2f1a7/0abdd/crazy.png 510w,
+/static/2d88c55b26a78abfc5ff974e04c2f1a7/c5bb3/crazy.png 680w,
+/static/2d88c55b26a78abfc5ff974e04c2f1a7/105d8/crazy.png 1170w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>둥근해미친거또떳는데못잔우리..ㅠ</p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.29411764705883%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAPoAAAD6AG1e1JrAAADcklEQVR42i2T/08TdxjH72/QH43OBCVzWitCmdajpbS9lgptObryTSgILEaSuRizzKAzLjowEzbQmCljKyHZjBphalQmAWEVETVjhbv22t63z9197kvtYWL2g7/t07jk+fX1vN/P+3kebGTkCk2vS5K48XaDep0I26279+xzVTsb6nwup4Osc8fHLvMc89ZUDU3QIA9lFkos4BkuS2Gjo6NPnsyIIqfrmqEr7a2kZdfOoBsnA+72pmD4sLuvt3V+9oFZUA0dIFhVOChzipgVuTQ2Nnbj+dJfCJZl8KaQv3510GbZ4Xfinc3kl8djjfVEsLbm6o8X2BxlmlBTBbXIsxDkZCGDTUzEV1aWeCGnKJJu6LMz05F6V0+jNxZt8HqJcLDW56nuaAnPPLpbKCi6/j+sSjkoZbHx8bFXr5ZlRUSwJANqffXcyS5X5e6GUPBYjPS4a7zu6k9tZef6T6ZTSbOgqJBTIasrrCbnsPivv9BUUpYFCGUUm6rB+M8jZACPhn0Bn6+7LYhkCW9NNFI/PfV73pCQuAY5Q+XzKo9NTk6k02uyLGoalABqoTx/NtfXE/EcquhtbyIbQj53VR3h9HnwocEzydUXZkE2VM4o8hx2+9ZNJkNBCHRdRc4BECjqn9Hv+9sitZX7rCdaif4vOnrbIw78QDRETN+KGwYwNB7BRdtTU3cYhkKyhqEhMpfLZBh6cnyoO9Z49siho0EH7vJX4Xi51WLbu+OnK4OFN0pe4xGJeOzhwweCwEJkGfCCwKECEvjj7uTF092Ew+axHxhorjzTE4qG/X5nWawltDj/CPAp0xBRZlgi8TSbSwGJV5FrRUIL50Vh+dnc8Hen+roi5zt9n5PuCputrLzcste6s2R7X2/L3J/3TQOgbWELT2cz2RSKGpUo8hyHfGeo9bX49UtD357YVVpi21/eSRJHIoGONjLkx7taDt+4NkwnX27kJWxxcR7NqSgAXdgHOJWi00z63p340MBXXZ8RF3qI08ebHFX2bR9t37x5k8tuHb509vH928WZE4lFls0isngkksjzLMOkKGp9KTH/w8Cpo82BPR+XWj4psZRuIZwVx7rbfpu4xmf+Frk1LrOKLS8vITUEf1BGjdCTJZOrNE2NXP5m29YtBw/aL57/euHxzSz98v07+P5fzdTRR60szN77D7QVQa/q1stHAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gimbab"
+        title="gimbab"
+        src="/static/f6fb1a8ece3a2c4fa3ce0adfbf3bfd48/9f933/gimbab.png"
+        srcset="/static/f6fb1a8ece3a2c4fa3ce0adfbf3bfd48/30f5c/gimbab.png 85w,
+/static/f6fb1a8ece3a2c4fa3ce0adfbf3bfd48/04472/gimbab.png 170w,
+/static/f6fb1a8ece3a2c4fa3ce0adfbf3bfd48/9f933/gimbab.png 340w,
+/static/f6fb1a8ece3a2c4fa3ce0adfbf3bfd48/0abdd/gimbab.png 510w,
+/static/f6fb1a8ece3a2c4fa3ce0adfbf3bfd48/c5bb3/gimbab.png 680w,
+/static/f6fb1a8ece3a2c4fa3ce0adfbf3bfd48/669cd/gimbab.png 3024w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>마지막 아침.. 8시 제출이었나 ?.. 제출하고 아침먹으니 속이 안좋았다 ㅠㅠ 제출할 때 구글드라이브 오류가 계속 나서 제출 5분 전 쯤 주최측에 급하게 여쭤봐서 usb를 빌려 제출드렸다.</p>
+<p><strong>혹시 이 글을 보시는 2025 해커톤 분들은 usb를 지참해가시길..ㅠ</strong></p>
+<br>
+<br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.29411764705883%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAPoAAAD6AG1e1JrAAADnklEQVR42gGTA2z8AM/Jxc3IxM7JxdfSztHNx9TQyt/b1uLd2Obh2sK+uDlvWgNVOjYrKSUvK4iUfuzi3uHg3+Le3eDb2+Pe2wDPycLPycXSzcjb1tLb1s/f2tPGxL6ZlpHW0tDu3c6Xi20eSzoeFREkHBu3iXTm0MXl5OTf2tnIxcmnpaUA0cvE1M7I1s/J4NvUwL7C3tnanZeVHx4il4R34qN6wX9UjYqFHx8hYmBn3djZ5dzZ5uLh2tXSsK6rKCgoANjRytnTzNvVztzY1K2ws5SXsFmEgDllXZR6V8yGV8ybgrevsG5pci41VJCPl+vn5eDd3eHd2tjUz6KemQDd1s7d1czl3dK4tsKMlqhUWVsfIB5ARDyXnXbOxa753s3y18jx0MaYkJmnqK3q4OH25Obw4+Lc19PBvboA4NfP4NfP49zR2tfUgoilOj4/EB8WFx8ad31k3b2T9cum8NbL7tjM6+Xg7tjSkq6ca7uoutvQx8C9raqnAOfd0+3k1uXf1PLt473Avn2pmwZ7WjlTS52LgcudVvDDhunDw/HWyvrTv6aGciJkSgFTPRhIPmtra7q3tADg2teipr2LjZiIgX1bZV8of2wbblxbbmq1nZHjxKfgwbbozM303s/5tZNZalQAUTswHh4jDhIcGhuDg4IAu77SXm6YNDU+FxcbHh0iMSkrX1lVCINvcqac6dza2NTR5tzZ7+bg9tXEp493KW1PCFpDBzMnPkRDpqWiAKex1E5Xbj02LldORlJLRTItLIdnZjIzMiIfHrutmuni2/Dm5uTZ3O7s7sO3s3yDbwCHYkawmLm6t8bDvQDS0dxTWnEoIhxHPjgqJSMWFBNOUk4INzEZOTKwpprMysOno57iw7n029Dn5unKz9C80svs5eXx6unV0c8A6+TaysXEPDg1AgEBAgMBRjImMXBfAoZqd62Z2c7H18/KzdDP6tPM7cm73NnV29DD8OXo5+Lg6OTi5uHhAOTb0/Hn29/VyqmroWd5YdilhLKciXyEcq6dkaCuqtHNws3Jw5yZotiqnbSmj7q1le3o7efh4Ork5Ofi4gDj2tLl29Pq49nt4dHWs5bOp5DDnpCpmo/FvbSQqIe5uYyAYUwsLzaPb2bDk3e0rorz7Ozo4ePq5eXp5eUA4tjQ5tzT5NzT2LOa0KSIxJ+LvaCV1c3B59/X5fLV2LuccGhaGCElYFpYT5R0pbKE9evo5+Pl6+Xm6eTlYm03WkSb444AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jungsuri"
+        title="jungsuri"
+        src="/static/24e2e6da52eed98477abe80c9c4dd045/9f933/jungsuri.png"
+        srcset="/static/24e2e6da52eed98477abe80c9c4dd045/30f5c/jungsuri.png 85w,
+/static/24e2e6da52eed98477abe80c9c4dd045/04472/jungsuri.png 170w,
+/static/24e2e6da52eed98477abe80c9c4dd045/9f933/jungsuri.png 340w,
+/static/24e2e6da52eed98477abe80c9c4dd045/0abdd/jungsuri.png 510w,
+/static/24e2e6da52eed98477abe80c9c4dd045/c5bb3/jungsuri.png 680w,
+/static/24e2e6da52eed98477abe80c9c4dd045/669cd/jungsuri.png 3024w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<p>본선 끝나고 .. 최종발표까지 한 후, 주신 햄부기 !!!! 아마 인원 맞춰서 준비하신 듯 한데 .. 다들 30시간 밤샘하고 순위 발표 후 가셔서 .. 엄청 많이 남았다…</p>
+<p>그리고 드라이샴푸고 뭐고 다 빈 통이었다 ㅠㅠ 그래서 몰골이 좀 .. 죄송함다.</p>
+<br>
+<br>
+<h2 id="-대상-수상" style="position:relative;"><a href="#-%EB%8C%80%EC%83%81-%EC%88%98%EC%83%81" aria-label=" 대상 수상 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>🏆 대상 수상</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 132.94117647058826%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAIAAADzvTiPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGV0lEQVR42iVSaUxb2Rm9tITpjDpVVWk6DVKjjpJMMtBpBrzgDS/Py3t+9rMdFrPZ2MYOOBjwhuOFsIYltoMBg7ENYTGQxB7AMVD2gQkEgsNSyFpm0mRG6bRqpbbq8qvqn5r26tyj77u6557zSRe06ORt1fLOWkWPXTXmrO61q2xKLOa3bUc93mulfQ7VcGtV9zVlszbHoRZbFaJaGWoqQcxyxKEWAqdR09+Q0GjcJtnShKvHob6ukQy1VIx3VCeUXpuy0yxz6gubtLk2lcQixywlqEUmsCjQOjUG6spL3FZN49XiJl3RLXNpr6MsUK/xO9R9dmUiRfc1hadW3l5TWF+eY1WKzDKBuQRNmNcqUHvCuUEra9bJPVaNr7FioEUXaNL2Ocr669Q+R1m3VeE2l7QbCht1eTa1xChDq4thfTGiL4ENcsSiQkG7QXXTWOaqVbmspa5r8lvW0i670mtX9FhL3caSjqqCG+V5DQqxtQA1imE9xjWIuCYRxyyBzDlMcLOmzG284jFrvHpVn0HVZy7rMSm7zHKnsai5Jt+kF5QbYZUJkVaxMH02z0Sm1+KyOnA4D4R2m8DVcoFCzVTpeEhQSBviEAOsT6dYZ8doqbep70+S0r1yqEOX8vmvwJfnwfJpMPchmD4D4ueSdpgfzLcDgZpXaTRwK9mn1nBgMR1Efgm20kA0PWmCBGZJ+T6XN7RKmJFdWpUiS2XsuaJTI79IXvk4eZmeNGEEogqByWrJtUh/sEpOiWWC8TTcevH9+Obao8ODw+ODwzdvvvrrd6//8uzoD4+efhs52sNmKsH8mXcWoe+PW4Cnd4xSnUG2E1I2oFMxPBg57967+4+X/9nb/936wfPd/a9vx9dKH4zmbviJSzcMW/eur/hA9EzKAivpjgkMDz0UXs+ht0tTFpjvhdLB2MftO2O23X7Whgle6YzF487NGUnMu3T4aufl23+9+bdrdQzETp+f4H1oug6mQt9ou+vpw4HCzo6AsofaK3bEg9r4LfdB7PbUxEx47tne24ZK9ZPFzT8trf3+yd/apgOMu9hHEyPvVMbAzVCswDVAbLWOWqJum+eHgzjb42C4s//x0lGwvdVbXzQQ6cBkfKmQHOpxhYdGpl1XTs9C7w1a3mVdBlcfjWb432Y2hcSY6tPWIhDO/MkIt1VfLGsp56jYNZbcs1fwqmrU0KDICsroEwjVz0xexyX3pr+f8iPA8Oio/MsXsYJkJPXHOZd+rsOTC9kIRrgox4d+M7d99Nh3tKxwKhiVGOgmfS/2SdLQBbB47qfjxJqqSoDxUKlEACny0YAqr+mqw2Rrc7oZVTlV9frt499uv9jdefuKXCK9qOBeGtCo91qLV+zSA4f1aXd4cwUcf/1VZ1e3PzB4Nxy7Nx3r8g8MRe788+9/DEdGJUqFusUsM5dLFPmf1BUzmvSdbV1OpyfoGw0Gxzt7+8EVTRmZRueiQg4fhWA+B4YnPw999+dvleWa1NRUDEVxOHxoOjq7vXUJQ86mpxOz6TQ2h8Zi09lcQKFl5xcW5RUU5hUUiXLyFUq50aCVFhfhSGQuDKMi7EJ6mtsXiD992XCjLZNIRDARKr4slORgl3OBEBOiAlQgQE+2UMhF+Aw2j81DEod2S1VurviDn6WK8/IXVpd3duNKtRpPIrNhPsSDmRAbpF08l3bhPAGXkU1LxGHDAhQRCGAUhVG+JEfMx4SUbAaJRocFAqVaI87NZ7DZCQM6g0GlkAGLgmdRCFwmFWEzUYQr4CdUPBjmcDgQg8FgQSyIw2FBUGI6fFYWhUbLZkB0FkSmUvEEIqCSSbzEZV5icRGYByf4BBwU4SUe4sP/b7l8mJeoT9oEI4l8JwBSDMnDUBECoxwIZrM4TAaDRiNnZREIxEwcPjMTh8MRPsvE/w+EzzJOOANPwhEoeCIF7EUDe/cDu9P++JRvO9yzHfFu3ulaHXYu3u6Y8d+472ue6m0ev1U32G7taTA5rVUtJm2joaJJr23UV4CjhZGDuaH9Xw8+Wwg9mx9+vjD8Ynn01dqd46Xhl/ODL+YHn8wGD2cHdqOBh2H/xj3/w8mh9Uhg9W7fg3AA7Ez6tsLe+NzA67nEXw4ezAWOH4TfbE0dfzG+P+Xdn+rdiXQ9jvofRYNfRvqfr86/3tzYWhiPTrrWp4P/BVcYwmB7rx+bAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="winn"
+        title="winn"
+        src="/static/57311aaf9678a800ea2d87d9719af1de/9f933/winn.png"
+        srcset="/static/57311aaf9678a800ea2d87d9719af1de/30f5c/winn.png 85w,
+/static/57311aaf9678a800ea2d87d9719af1de/04472/winn.png 170w,
+/static/57311aaf9678a800ea2d87d9719af1de/9f933/winn.png 340w,
+/static/57311aaf9678a800ea2d87d9719af1de/0abdd/winn.png 510w,
+/static/57311aaf9678a800ea2d87d9719af1de/c5bb3/winn.png 680w,
+/static/57311aaf9678a800ea2d87d9719af1de/5bf79/winn.png 966w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<br>
+<p>아무튼 우리 대상탔다!! 거의 30시간 넘게 밤 샌 몰골이라 .. 많이 추하지만 서울시에서 스트리밍 <del>당</del>했던 영상 첨부 ..
+<a href="https://www.youtube.com/live/PtImA9dVE9o?si=5KH2XJ6HZWmhE0m5">🔗 서울시 유튜브 시상 영상</a></p>
+<p>오세훈 서울시장님 잘 생기셔서 놀랐다 ㅎㅎ 그리고 저 때 너무 신나서 방방 뛰었는데 좀 <del>역겨울지도</del> 봐주셔서 감사합니다 ^^ ,,</p>
+<br>
+<br>
+<p>아래는 좀 간단하게 정리한 저희 팀 프로젝트를 소개할게용 ㅎㅎ</p>
+<hr>
+<h2 id="-해커톤-프로젝트-소개" style="position:relative;"><a href="#-%ED%95%B4%EC%BB%A4%ED%86%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C" aria-label=" 해커톤 프로젝트 소개 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💬 해커톤 프로젝트 소개</h2>
+<p>새싹 해커톤에서 발달장애인을 위한 전자도서관 서비스를 개발하게 되었습니다. 이번 해커톤 주제가 바로 <code class="language-text">생성형 AI로 사회적 약자를 위한 서비스 개발</code>이었고, 발달장애인들이 쉽게 읽을 수 있는 자료가 많이 부족하다는 문제에서 시작한 프로젝트였습니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 340px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50.588235294117645%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABtklEQVR42o2SOU9CQRSF+SUm4m6McYH3QFFEVtlxN26NMbGxsfI3aKmlAiLIrmAMjYl/wNJY+V+O99wXsFOLyby5M++755wZ20jejaGciYGsE3YZg1mjN7PWf+vAcM4FnuvOvw0bYROFBThKQRgPYUwXl2HKPFP0w/kQgqcax/id518wBfbdTOP07RzZjxIu369x/HqGwmcVF+9Xum5/deCrp2EXpaP5ub+B7Ewl/sYaFqoJTBV9CDTWVdl8JYaVx20F0fqguLF3o+nF5NA9fpNlI3WplkawuS6gNSRbe2p3qZZCqr2PSHNToFuqcq4SRVQaJFq7cJUjiD3t6PmtlyNtPHnvtRSa5bAqMkQpVTlKAf15uZ6BV8Cscc191vyNVT3DphQRam7oGWZto9S9zgkyz4cINiyVvBgqTrcPVCXrtGW9Buv2+W29BENt9ywzC9Jd5RXMSld2Zgy8dbfUaI11KydDQT8wZw/UfX5qmWp4IRy0RisE8XssP69g2vJU4hqNW+rcZ/aMhBdJUVzLO3QhLMEzdNr11pKS06puEsg3ypoCCRP4ojQ2BeiTPNmcl2hqgxS+AYhfrH+rmIZCAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="hackerthon"
+        title="hackerthon"
+        src="/static/8253d7e5d6596fc9e4d5c7620743e8ea/9f933/hackerthon.png"
+        srcset="/static/8253d7e5d6596fc9e4d5c7620743e8ea/30f5c/hackerthon.png 85w,
+/static/8253d7e5d6596fc9e4d5c7620743e8ea/04472/hackerthon.png 170w,
+/static/8253d7e5d6596fc9e4d5c7620743e8ea/9f933/hackerthon.png 340w,
+/static/8253d7e5d6596fc9e4d5c7620743e8ea/0abdd/hackerthon.png 510w,
+/static/8253d7e5d6596fc9e4d5c7620743e8ea/a805e/hackerthon.png 572w"
+        sizes="(max-width: 340px) 100vw, 340px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>프로젝트 명: 발달장애인을 위한 전자도서관</li>
+<li>해커톤: 2024 새싹 해커톤 - 생성형 AI로 사회적 약자를 위한 서비스 개발</li>
+<li>예선 기간: 6월 7일 - 7월 22일</li>
+<li>본선 기간: 8월 1일 - 8월 2일 (무박 2일)</li>
+</ul>
+<br>
+<br>
+<p><img src="/6603df993f4f3bb605444f12cd6e8337/gisul.png" alt=""></p>
+<p>현재 국내에서 발달장애인분들이 읽기 쉬운 책이나 자료는 한정적이지만, 발달장애 인구의 약 <code class="language-text">45%</code>가 가장 필요로 하는 대체 자료로 읽기 쉬운 책을 선정하였다는 것을 알게되었습니다. 국립장애인도서관의 자료에 따르면, 현재까지 제작된 발달장애인을 위한 읽기 쉬운 책은 총 33권입니다. 저희는 생성형 AI를 활용하여, 쉽게 접근할 수 있는 ‘발달장애인을 위한 전자도서관’을 만들어보기로 했습니다.</p>
+<br>
+<br>
+<ul>
+<li>문제 정의</li>
+</ul>
+<ol>
+<li>읽기 쉬운 책의 공급이 왜 부족할까?</li>
+</ol>
+<p>2023년, 정부에서 읽기 쉬운 책 만들기 사업에 투자한 예산은 1억 5천만원입니다. 그러나 인건비와 시간 소모로 인해, 실제 제작된 책은 15권입니다.</p>
+<ol start="2">
+<li>읽기 어려운 자료의 장벽을 어떻게 낮출까?</li>
+</ol>
+<p>발달장애인분들은 일상적으로 읽는 글 조차도 읽고 이해하는 데 많은 어려움을 겪습니다. 예를 들면, 우리가 매일 타는 엘리베이터의 안내문이나, 공지 같은 글 입니다.</p>
+<p>세상 모든 곳에 정보는 많지만 정작 발달장애를 가진 분들이 읽을 수 있는 자료는 적다 보니, 읽기 쉬운 책과 변환할 수 있는 서비스가 꼭 필요하다고 판단했습니다.
+발달장애인분들에게 맞는 쉬운 자료를 제공해 정보 접근성을 높이자는 것이 이번 프로젝트의 목표였습니다.</p>
+<br>
+<br>
+<ul>
+<li>문제 해결:</li>
+</ul>
+<p>문제 해결을 위해 <code class="language-text">ChatGPT-3.5-turbo</code>와 <code class="language-text">ChatGPT-4o</code> 모델을 적극 활용했습니다. 각 모델을 적재적소에 투입해 발달장애인에게 맞춤형 자료를 제공할 수 있도록 설계했습니다.</p>
+<p><strong>- ChatGPT-3.5-turbo 모델의 Fine-tuning:</strong>
+짧은 텍스트에 대해서는 발달장애인 독자들이 쉽게 이해할 수 있도록 맞춤형 답변을 제공하기 위해 모델을 Fine-tuning 했습니다. Training Loss 0.1962, Eval Accuracy 0.85의 성능을 달성하여, 맞춤형 응답을 생성할 수 있었습니다.</p>
+<p><strong>- ChatGPT-4 모델의 Prompt Engineering:</strong>
+긴 텍스트나 복잡한 문서를 처리할 때는 ChatGPT-4 모델을 활용했으며, Prompt Engineering을 통해 모델의 응답 정확도를 높였습니다.
+One-shot 기법으로 구체적인 예시를 추가해, 모델이 발달장애인분들에게 적합한 방식으로 내용을 전달할 수 있도록 최적화했습니다.</p>
+<br>
+<br>
+<ul>
+<li>프로젝트 결과 및 성과: 대상 (서울시장상)</li>
+</ul>
+<p>해커톤 최종 결과에서는 서울시장상 대상을 수상했습니다. 프로젝트 성과가 의미 있는 사회적 기여로 인정받은 부분에서 뿌듯함을 느꼈습니다.</p>
+<br>
+<br>
+<ul>
+<li>개인 기여: 모델 설계 및 최적화, 팀워크</li>
+</ul>
+<p>이번 프로젝트에서는 제가 모델 설계와 최적화를 주도했으며, 팀원들과 협업하며 전반적인 성과를 함께 이끌어냈습니다. 모든 팀원이 각자의 강점을 발휘하면서, 더 나은 결과를 이끌어낼 수 있었던 점도 기억에 남습니다.</p>
+<br>
+<br>
+<h3 id="마무리" style="position:relative;"><a href="#%EB%A7%88%EB%AC%B4%EB%A6%AC" aria-label="마무리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>마무리.</h3>
+<p><strong>AI로 사회적 가치를 만드는 즐거움</strong></p>
+<p>사회적 약자를 위한 서비스를 개발하는 해커톤인 만큼, 다른 팀에서도 여러 아이디어가 나왔고 정말 좋은 서비스가 많았다. 각 팀의 프로젝트가 가진 고유한 아이디어를 보며 우리도 영감을 받았던 것 같다.</p>
+<p>대회 내내 우리 팀도 주변 팀들을 보며, “저기는 무슨무슨 주제인데 아이디어가 좋네요”, “저기는 어떤 기술을 쓴다는데 신기해요, 저런거 실제로 처음봐요!” 이런 이야기를 하면서 개발을 진행했다. <del>물론 그냥 밈친자들의 헛소리가 반이었다..</del></p>
+<p>결선 진출했을 때 고생한 24시간에 대한 위로를 받는 느낌과 동시에 놀라움이었다. 또, 해커톤의 의의를 몸소 느꼈다. 사회적 약자를 위한 서비스를 만들겠다는 의지로 모인 다양한 사람들의 열정과 노력을 함께한 것이 영광이었다. 우리의 기술과 아이디어로 만들어진, 누군가에게는 정말 필요한 서비스를 개발하여 세상이 좀 더 따뜻해졌으면 하는 생각이 들었다.</p>
+<p>단순한 해커톤 참여이긴 했지만, 많은 것들을 배우고 경험했다. 이런 경험을 하게 해주신 주최측과 서울시, 구글에 감사함을 느낀다. <del>상을 받았기에 이렇게 생각을 할 수 있는 것 같기도 하고..</del></p>
+<p><u>아무튼 앞으로도 더 많은 사람들이 쉽게 정보를 접하고, 더 많은 선택지를 가질 수 있는 세상을 위해 계속 도전해보고자 한다.</u></p>
+<p>그리고 다양한 해커톤, 공모전에 더 참여해보고 싶다!</p>
+<br>
+<br>
+<p>궁금한 점에 대해서 언제든 댓글 환영입니다 🥰
+읽어주셔서 감사합니다!</p>
+<div class="table-of-contents">
+<ul>
+<li>
+<p><a href="#-%ED%8C%80-%EA%B5%AC%EC%84%B1">🌏 팀 구성</a></p>
+</li>
+<li>
+<p><a href="#%EF%B8%8F-%EC%98%88%EC%84%A0-%EC%A4%80%EB%B9%84">✔️ 예선 준비</a></p>
+</li>
+<li>
+<p><a href="#-%EB%B3%B8%EC%84%A0-%EC%A7%84%EC%B6%9C">😝 본선 진출!!!</a></p>
+<ul>
+<li>
+<ul>
+<li><a href="#-%EC%98%88%EC%84%A0-%EB%A7%81%ED%81%AC">🔗 예선 링크</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#-%EB%B3%B8%EC%84%A0">😚 본선</a></p>
+</li>
+<li>
+<p><a href="#-%EB%8C%80%EC%83%81-%EC%88%98%EC%83%81">🏆 대상 수상</a></p>
+</li>
+<li>
+<p><a href="#-%ED%95%B4%EC%BB%A4%ED%86%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C">💬 해커톤 프로젝트 소개</a></p>
+<ul>
+<li><a href="#%EB%A7%88%EB%AC%B4%EB%A6%AC">마무리.</a></li>
+</ul>
+</li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/paper_graduation/"><div class="direction">이전 글</div><div class="title">석사학위논문 회고</div></a></div><div class="post-navigator-card-wrapper"></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2024<!-- --> <a href="https://github.com/yangwonhee">양원희</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/sesac_hackerthon/";window.___webpackCompilationHash="baa6cf110736444a559f";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f196834924f88edde8fc.js"],"app":["/app-f3d34bd07b464d2533dc.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-994d32f99f7af20500f9.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b692191b59c701bb71a8.js"],"component---src-pages-index-js":["/component---src-pages-index-js-774d096c35c01f7fa9a5.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-3e34a31f43cfbf62214e.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-665dc149380998d4d8c4.js"]};/*]]>*/</script><script src="/polyfill-f196834924f88edde8fc.js" nomodule=""></script><script src="/app-f3d34bd07b464d2533dc.js" async=""></script><script src="/framework-de157c6b30d4790e4e81.js" async=""></script><script src="/webpack-runtime-05949bfef3f0dfa469a7.js" async=""></script></body></html>
