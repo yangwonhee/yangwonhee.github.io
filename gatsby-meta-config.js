@@ -9,7 +9,7 @@ module.exports = {
       repo: `yangwonhee/yangwonhee.github.io`, // `zoomkoding/zoomkoding-gatsby-blog`,
     },
   },
-  ga: '0', // Google Analytics Tracking ID
+  ga: 'G-QCV3HLMNS8', // Google Analytics Tracking ID
   author: {
     name: `양원희`,
     bio: {
